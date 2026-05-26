@@ -1,0 +1,471 @@
+  {
+    "version": "1.0",
+    "ai": {
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "api_key_env": "OPENAI_API_KEY",
+      "temperature": 0.2,
+      "max_tokens": 8192,
+      "throttle_sec": 1.0,
+      "analysis_concurrency": 3,
+      "enrichment_concurrency": 2,
+      "languages": ["zh", "en"]
+    },
+    "sources": {
+      "github": [
+        {
+          "type": "repo_releases",
+          "owner": "modelcontextprotocol",
+          "repo": "servers",
+          "enabled": true
+        },
+        {
+          "type": "repo_releases",
+          "owner": "modelcontextprotocol",
+          "repo": "python-sdk",
+          "enabled": true
+        },
+        {
+          "type": "repo_releases",
+          "owner": "langchain-ai",
+          "repo": "langchain",
+          "enabled": true
+        },
+        {
+          "type": "repo_releases",
+          "owner": "langchain-ai",
+          "repo": "langgraph",
+          "enabled": true
+        },
+        {
+          "type": "repo_releases",
+          "owner": "microsoft",
+          "repo": "autogen",
+          "enabled": true
+        },
+        {
+          "type": "repo_releases",
+          "owner": "microsoft",
+          "repo": "semantic-kernel",
+          "enabled": true
+        },
+        {
+          "type": "repo_releases",
+          "owner": "crewAIInc",
+          "repo": "crewAI",
+          "enabled": true
+        },
+        {
+          "type": "repo_releases",
+          "owner": "run-llama",
+          "repo": "llama_index",
+          "enabled": true
+        },
+        {
+          "type": "repo_releases",
+          "owner": "ollama",
+          "repo": "ollama",
+          "enabled": true
+        },
+        {
+          "type": "repo_releases",
+          "owner": "vllm-project",
+          "repo": "vllm",
+          "enabled": true
+        },
+        {
+          "type": "repo_releases",
+          "owner": "huggingface",
+          "repo": "transformers",
+          "enabled": true
+        },
+        {
+          "type": "repo_releases",
+          "owner": "pytorch",
+          "repo": "pytorch",
+          "enabled": true
+        },
+        {
+          "type": "repo_releases",
+          "owner": "astral-sh",
+          "repo": "uv",
+          "enabled": true
+        },
+        {
+          "type": "repo_releases",
+          "owner": "rust-lang",
+          "repo": "rust",
+          "enabled": true
+        },
+        {
+          "type": "repo_releases",
+          "owner": "kubernetes",
+          "repo": "kubernetes",
+          "enabled": true
+        },
+        {
+          "type": "user_events",
+          "username": "karpathy",
+          "enabled": true
+        },
+        {
+          "type": "user_events",
+          "username": "simonw",
+          "enabled": true
+        }
+      ],
+      "hackernews": {
+        "enabled": true,
+        "fetch_top_stories": 40,
+        "min_score": 120
+      },
+      "rss": [
+        {
+          "name": "OpenAI News",
+          "url": "https://openai.com/news/rss.xml",
+          "enabled": true,
+          "category": "ai-lab"
+        },
+        {
+          "name": "Anthropic News",
+          "url": "https://www.anthropic.com/news/rss.xml",
+          "enabled": true,
+          "category": "ai-lab"
+        },
+        {
+          "name": "Google DeepMind Blog",
+          "url": "https://deepmind.google/discover/blog/rss.xml",
+          "enabled": true,
+          "category": "ai-lab"
+        },
+        {
+          "name": "Google AI Blog",
+          "url": "https://blog.google/technology/ai/rss/",
+          "enabled": true,
+          "category": "ai-lab"
+        },
+        {
+          "name": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/feed.xml",
+          "enabled": true,
+          "category": "ai-ml"
+        },
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/atom/everything/",
+          "enabled": true,
+          "category": "llm-tools"
+        },
+        {
+          "name": "Latent Space",
+          "url": "https://www.latent.space/feed",
+          "enabled": true,
+          "category": "ai-agent"
+        },
+        {
+          "name": "Lilian Weng",
+          "url": "https://lilianweng.github.io/index.xml",
+          "enabled": true,
+          "category": "ai-research"
+        },
+        {
+          "name": "Chip Huyen",
+          "url": "https://huyenchip.com/feed.xml",
+          "enabled": true,
+          "category": "ml-systems"
+        },
+        {
+          "name": "The Gradient",
+          "url": "https://thegradient.pub/rss/",
+          "enabled": true,
+          "category": "ai-research"
+        },
+        {
+          "name": "Berkeley BAIR Blog",
+          "url": "https://bair.berkeley.edu/blog/feed.xml",
+          "enabled": true,
+          "category": "ai-research"
+        },
+        {
+          "name": "arXiv cs.AI",
+          "url": "https://export.arxiv.org/rss/cs.AI",
+          "enabled": true,
+          "category": "ai-research"
+        },
+        {
+          "name": "arXiv cs.CL",
+          "url": "https://export.arxiv.org/rss/cs.CL",
+          "enabled": true,
+          "category": "llm-research"
+        },
+        {
+          "name": "arXiv cs.LG",
+          "url": "https://export.arxiv.org/rss/cs.LG",
+          "enabled": true,
+          "category": "ml-research"
+        },
+        {
+          "name": "GitHub Engineering",
+          "url": "https://github.blog/engineering/feed/",
+          "enabled": true,
+          "category": "devtools"
+        },
+        {
+          "name": "GitHub Changelog",
+          "url": "https://github.blog/changelog/feed/",
+          "enabled": true,
+          "category": "devtools"
+        },
+        {
+          "name": "Cloudflare Blog",
+          "url": "https://blog.cloudflare.com/rss/",
+          "enabled": true,
+          "category": "infra"
+        },
+        {
+          "name": "Netflix TechBlog",
+          "url": "https://netflixtechblog.com/feed",
+          "enabled": true,
+          "category": "engineering"
+        },
+        {
+          "name": "Meta Engineering",
+          "url": "https://engineering.fb.com/feed/",
+          "enabled": true,
+          "category": "engineering"
+        },
+        {
+          "name": "AWS Architecture Blog",
+          "url": "https://aws.amazon.com/blogs/architecture/feed/",
+          "enabled": true,
+          "category": "cloud"
+        },
+        {
+          "name": "AWS Machine Learning Blog",
+          "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+          "enabled": true,
+          "category": "ml-platform"
+        },
+        {
+          "name": "Microsoft Research Blog",
+          "url": "https://www.microsoft.com/en-us/research/feed/",
+          "enabled": true,
+          "category": "research"
+        },
+        {
+          "name": "LWN.net",
+          "url": "https://lwn.net/headlines/rss",
+          "enabled": true,
+          "category": "linux"
+        },
+        {
+          "name": "Brendan Gregg",
+          "url": "https://www.brendangregg.com/blog/rss.xml",
+          "enabled": true,
+          "category": "systems-performance"
+        },
+        {
+          "name": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/feed/",
+          "enabled": true,
+          "category": "security"
+        },
+        {
+          "name": "Schneier on Security",
+          "url": "https://www.schneier.com/feed/atom/",
+          "enabled": true,
+          "category": "security"
+        }
+      ],
+      "reddit": {
+        "enabled": true,
+        "fetch_comments": 5,
+        "subreddits": [
+          {
+            "subreddit": "MachineLearning",
+            "enabled": true,
+            "sort": "hot",
+            "time_filter": "day",
+            "fetch_limit": 20,
+            "min_score": 80
+          },
+          {
+            "subreddit": "LocalLLaMA",
+            "enabled": true,
+            "sort": "hot",
+            "time_filter": "day",
+            "fetch_limit": 25,
+            "min_score": 80
+          },
+          {
+            "subreddit": "AI_Agents",
+            "enabled": true,
+            "sort": "hot",
+            "time_filter": "day",
+            "fetch_limit": 20,
+            "min_score": 30
+          },
+          {
+            "subreddit": "LangChain",
+            "enabled": true,
+            "sort": "hot",
+            "time_filter": "day",
+            "fetch_limit": 15,
+            "min_score": 20
+          },
+          {
+            "subreddit": "OpenAI",
+            "enabled": true,
+            "sort": "hot",
+            "time_filter": "day",
+            "fetch_limit": 15,
+            "min_score": 80
+          },
+          {
+            "subreddit": "ClaudeAI",
+            "enabled": true,
+            "sort": "hot",
+            "time_filter": "day",
+            "fetch_limit": 15,
+            "min_score": 50
+          },
+          {
+            "subreddit": "programming",
+            "enabled": true,
+            "sort": "hot",
+            "time_filter": "day",
+            "fetch_limit": 20,
+            "min_score": 150
+          },
+          {
+            "subreddit": "netsec",
+            "enabled": true,
+            "sort": "hot",
+            "time_filter": "day",
+            "fetch_limit": 15,
+            "min_score": 80
+          },
+          {
+            "subreddit": "rust",
+            "enabled": true,
+            "sort": "hot",
+            "time_filter": "day",
+            "fetch_limit": 15,
+            "min_score": 80
+          },
+          {
+            "subreddit": "kubernetes",
+            "enabled": true,
+            "sort": "hot",
+            "time_filter": "day",
+            "fetch_limit": 15,
+            "min_score": 40
+          }
+        ],
+        "users": []
+      },
+      "telegram": {
+        "enabled": true,
+        "channels": [
+          {
+            "channel": "zaihuapd",
+            "enabled": true,
+            "fetch_limit": 20
+          }
+        ]
+      },
+      "twitter": {
+        "enabled": false,
+        "apify_token_env": "APIFY_TOKEN",
+        "actor_id": "altimis~scweet",
+        "users": [
+          "karpathy",
+          "sama",
+          "gdb",
+          "simonw",
+          "jxmnop",
+          "emollick",
+          "ylecun",
+          "AndrewYNg",
+          "huggingface",
+          "LangChainAI",
+          "AnthropicAI",
+          "OpenAI",
+          "GoogleDeepMind"
+        ],
+        "fetch_limit": 100,
+        "fetch_reply_text": false,
+        "max_replies_per_tweet": 3,
+        "max_tweets_to_expand": 10,
+        "reply_min_likes": 20
+      },
+      "openbb": {
+        "enabled": false,
+        "fetch_filings": false,
+        "filings_provider": "sec",
+        "watchlists": [
+          {
+            "name": "ai-infra-megacaps",
+            "enabled": true,
+            "provider": "yfinance",
+            "fetch_limit": 20,
+            "category": "ai-business",
+            "symbols": ["NVDA", "MSFT", "GOOGL", "META", "AMZN", "TSM", "AMD", "ARM", "AVGO", "ORCL"]
+          }
+        ]
+      },
+      "ossinsight": {
+        "enabled": true,
+        "period": "past_24_hours",
+        "languages": ["All", "Python", "TypeScript", "Rust", "Go", "Jupyter Notebook"],
+        "keywords": [
+          "agent",
+          "agents",
+          "llm",
+          "mcp",
+          "rag",
+          "inference",
+          "workflow",
+          "automation",
+          "coding",
+          "developer",
+          "model",
+          "ai"
+        ],
+        "min_stars": 20,
+        "max_items": 40
+      }
+    },
+    "filtering": {
+      "ai_score_threshold": 7.0,
+      "time_window_hours": 24
+    },
+    "email": {
+      "enabled": false,
+      "smtp_server": "smtp.resend.com",
+      "smtp_port": 465,
+      "smtp_username": "resend",
+      "imap_enabled": false,
+      "imap_server": "",
+      "imap_port": 993,
+      "email_address": "noreply@example.com",
+      "password_env": "RESEND_API_KEY",
+      "sender_name": "Horizon Daily",
+      "subscribe_keyword": "SUBSCRIBE",
+      "unsubscribe_keyword": "UNSUBSCRIBE"
+    },
+    "webhook": {
+      "enabled": false,
+      "url_env": "HORIZON_WEBHOOK_URL",
+      "delivery": "summary_and_items",
+      "overview_position": "last",
+      "platform": "generic",
+      "layout": "markdown",
+      "fallback_layout": "markdown",
+      "languages": ["zh"],
+      "request_body": {
+        "text": "#{message_title}\n\n#{summary?limit=3000&split=---}"
+      },
+      "headers": ""
+    }
+  }
