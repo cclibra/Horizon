@@ -217,9 +217,17 @@
       "ai_score_threshold": 7.0,
       "time_window_hours": 36
     },
-    "email": {
-      "enabled": false
-    },
+  "email": {
+    "enabled": false,
+    "smtp_server": "smtp.qq.com",
+    "smtp_port": 465,
+    "imap_server": "imap.qq.com",
+    "imap_port": 993,
+    "email_address": "xxx@qq.com",
+    "sender_name": "Horizon Daily",
+    "subscribe_keyword": "SUBSCRIBE",
+    "unsubscribe_keyword": "UNSUBSCRIBE"
+  },
     "webhook": {
       "enabled": false,
       "url_env": "HORIZON_WEBHOOK_URL",
