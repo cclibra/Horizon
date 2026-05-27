@@ -8,7 +8,8 @@
       "max_tokens": 4096,
       "throttle_sec": 1,
       "analysis_concurrency": 2,
-      "enrichment_concurrency": 1
+      "enrichment_concurrency": 1,
+      "languages": ["en", "zh"]
     },
     "sources": {
       "hackernews": {
@@ -214,8 +215,8 @@
       }
     },
     "filtering": {
-      "ai_score_threshold": 7.0,
-      "time_window_hours": 36
+      "ai_score_threshold": 5.0,
+      "time_window_hours": 72
     },
   "email": {
     "enabled": false,
