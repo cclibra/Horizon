@@ -2,7 +2,7 @@
     "version": "1.0",
     "ai": {
       "provider": "openai",
-      "model": "HORIZON_AI_MODEL_NAME",
+      "model": "${HORIZON_AI_MODEL_NAME}",
       "api_key_env": "OPENAI_API_KEY",
       "base_url": "${HORIZON_AI_BASE_URL}",
       "temperature": 0.3,
