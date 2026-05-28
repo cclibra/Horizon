@@ -215,10 +215,10 @@
         ]
       }
     },
-    "filtering": {
-      "ai_score_threshold": 5.0,
-      "time_window_hours": 72
-    },
+  "filtering": {
+    "ai_score_threshold": 3.0,
+    "time_window_hours": 72
+  },
   "email": {
     "enabled": false,
     "smtp_server": "smtp.qq.com",

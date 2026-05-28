@@ -39,6 +39,7 @@
         - name: Run Horizon
           env:
             OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+            HORIZON_AI_BASE_URL: ${{ secrets.HORIZON_AI_BASE_URL }}
             DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
             ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
             GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
@@ -46,6 +47,12 @@
             APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
             HORIZON_WEBHOOK_URL: ${{ secrets.HORIZON_WEBHOOK_URL }}
           run: uv run horizon --hours 36
+
+        - name: Verify generated posts
+          run: |
+            test -d docs/_posts
+            find docs/_posts -maxdepth 1 -type f -name '*.md' -print
+            test "$(find docs/_posts -maxdepth 1 -type f -name '*.md' | wc -l)" -gt 0
 
         - name: Set current date
           run: echo "DATE=$(date +'%Y-%m-%d')" >> "$GITHUB_ENV"
