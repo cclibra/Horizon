@@ -5,7 +5,7 @@ date: 2026-05-28
 lang: zh
 ---
 
-> 从 114 条内容中筛选出 20 条重要资讯。
+> 从 115 条内容中筛选出 20 条重要资讯。
 
 ---
 
@@ -25,8 +25,8 @@ lang: zh
 14. [Google employee charged with $1M Polymarket insider trading bet on search term](#item-14) ⭐️ ?/10
 15. [Incident with Pull Requests, Issues, Git Operations and API Requests](#item-15) ⭐️ ?/10
 16. [Go: Support for Generic Methods](#item-16) ⭐️ ?/10
-17. [Mini Micro Fantasy Computer](#item-17) ⭐️ ?/10
-18. [Stress disrupts hippocampal integration of overlapping events, memory inference](#item-18) ⭐️ ?/10
+17. [Stress disrupts hippocampal integration of overlapping events, memory inference](#item-17) ⭐️ ?/10
+18. [Mini Micro Fantasy Computer](#item-18) ⭐️ ?/10
 19. [Canada to order military plane fleet from Sweden in shift from US suppliers](#item-19) ⭐️ ?/10
 20. [Gemini, Gophers, and Fingers. Oh My Alternative Internets Beyond HTTPS](#item-20) ⭐️ ?/10
 
@@ -177,20 +177,20 @@ hackernews · f311a · 5月27日 09:02 · [社区讨论](https://news.ycombinato
 ---
 
 <a id="item-17"></a>
-## [Mini Micro Fantasy Computer](https://miniscript.org/MiniMicro/index.html#about) ⭐️ ?/10
-
-Mini Micro Fantasy Computer
-
-hackernews · nicoloren · 5月27日 09:56 · [社区讨论](https://news.ycombinator.com/item?id=48291947)
-
----
-
-<a id="item-18"></a>
 ## [Stress disrupts hippocampal integration of overlapping events, memory inference](https://www.science.org/doi/10.1126/sciadv.aea5496?user_id=66c4bf745d78644b3aa57b08) ⭐️ ?/10
 
 Stress disrupts hippocampal integration of overlapping events, memory inference
 
 hackernews · gmays · 5月27日 16:26 · [社区讨论](https://news.ycombinator.com/item?id=48296622)
+
+---
+
+<a id="item-18"></a>
+## [Mini Micro Fantasy Computer](https://miniscript.org/MiniMicro/index.html#about) ⭐️ ?/10
+
+Mini Micro Fantasy Computer
+
+hackernews · nicoloren · 5月27日 09:56 · [社区讨论](https://news.ycombinator.com/item?id=48291947)
 
 ---
 
