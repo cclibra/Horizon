@@ -5,7 +5,7 @@ date: 2026-05-28
 lang: zh
 ---
 
-> 从 111 条内容中筛选出 20 条重要资讯。
+> 从 113 条内容中筛选出 20 条重要资讯。
 
 ---
 
@@ -22,13 +22,13 @@ lang: zh
 11. [Rust (and Slint) on a Jailbroken Kindle](#item-11) ⭐️ ?/10
 12. [FBI Arrests CIA Official with $40M in Gold Bars in His Home](#item-12) ⭐️ ?/10
 13. [DuckDuckGo search saw 28% more visits after Google said people love AI mode](#item-13) ⭐️ ?/10
-14. [Incident with Pull Requests, Issues, Git Operations and API Requests](#item-14) ⭐️ ?/10
-15. [Go: Support for Generic Methods](#item-15) ⭐️ ?/10
-16. [Mini Micro Fantasy Computer](#item-16) ⭐️ ?/10
-17. [Canada to order military plane fleet from Sweden in shift from US suppliers](#item-17) ⭐️ ?/10
-18. [Gemini, Gophers, and Fingers. Oh My Alternative Internets Beyond HTTPS](#item-18) ⭐️ ?/10
-19. [Last.fm is now independent](#item-19) ⭐️ ?/10
-20. [Stress disrupts hippocampal integration of overlapping events, memory inference](#item-20) ⭐️ ?/10
+14. [Google employee charged with $1M Polymarket insider trading bet on search term](#item-14) ⭐️ ?/10
+15. [Incident with Pull Requests, Issues, Git Operations and API Requests](#item-15) ⭐️ ?/10
+16. [Go: Support for Generic Methods](#item-16) ⭐️ ?/10
+17. [Mini Micro Fantasy Computer](#item-17) ⭐️ ?/10
+18. [Canada to order military plane fleet from Sweden in shift from US suppliers](#item-18) ⭐️ ?/10
+19. [Gemini, Gophers, and Fingers. Oh My Alternative Internets Beyond HTTPS](#item-19) ⭐️ ?/10
+20. [Last.fm is now independent](#item-20) ⭐️ ?/10
 
 ---
 
@@ -150,6 +150,15 @@ hackernews · HelloUsername · 5月27日 16:28 · [社区讨论](https://news.yc
 ---
 
 <a id="item-14"></a>
+## [Google employee charged with $1M Polymarket insider trading bet on search term](https://www.cnbc.com/2026/05/27/google-employee-polymarket-insider-trading.html) ⭐️ ?/10
+
+Google employee charged with $1M Polymarket insider trading bet on search term
+
+hackernews · pseudolus · 5月28日 00:49 · [社区讨论](https://news.ycombinator.com/item?id=48302822)
+
+---
+
+<a id="item-15"></a>
 ## [Incident with Pull Requests, Issues, Git Operations and API Requests](https://www.githubstatus.com/incidents/xy1tt3hs572m) ⭐️ ?/10
 
 Incident with Pull Requests, Issues, Git Operations and API Requests
@@ -158,7 +167,7 @@ hackernews · maxnoe · 5月27日 12:15 · [社区讨论](https://news.ycombinat
 
 ---
 
-<a id="item-15"></a>
+<a id="item-16"></a>
 ## [Go: Support for Generic Methods](https://github.com/golang/go/issues/77273) ⭐️ ?/10
 
 Go: Support for Generic Methods
@@ -167,7 +176,7 @@ hackernews · f311a · 5月27日 09:02 · [社区讨论](https://news.ycombinato
 
 ---
 
-<a id="item-16"></a>
+<a id="item-17"></a>
 ## [Mini Micro Fantasy Computer](https://miniscript.org/MiniMicro/index.html#about) ⭐️ ?/10
 
 Mini Micro Fantasy Computer
@@ -176,7 +185,7 @@ hackernews · nicoloren · 5月27日 09:56 · [社区讨论](https://news.ycombi
 
 ---
 
-<a id="item-17"></a>
+<a id="item-18"></a>
 ## [Canada to order military plane fleet from Sweden in shift from US suppliers](https://www.theguardian.com/world/2026/may/27/canada-sweden-saab-globaleye-aircraft) ⭐️ ?/10
 
 Canada to order military plane fleet from Sweden in shift from US suppliers
@@ -185,7 +194,7 @@ hackernews · tosh · 5月27日 16:53 · [社区讨论](https://news.ycombinator
 
 ---
 
-<a id="item-18"></a>
+<a id="item-19"></a>
 ## [Gemini, Gophers, and Fingers. Oh My Alternative Internets Beyond HTTPS](https://brennan.day/gemini-gophers-and-fingers-oh-my-alternative-internets-beyond-https/) ⭐️ ?/10
 
 Gemini, Gophers, and Fingers. Oh My Alternative Internets Beyond HTTPS
@@ -194,20 +203,11 @@ hackernews · ChrisArchitect · 5月27日 17:24 · [社区讨论](https://news.y
 
 ---
 
-<a id="item-19"></a>
+<a id="item-20"></a>
 ## [Last.fm is now independent](https://support.last.fm/t/last-fm-is-now-independent/118591) ⭐️ ?/10
 
 Last.fm is now independent
 
 hackernews · twistslider · 5月27日 15:36 · [社区讨论](https://news.ycombinator.com/item?id=48295892)
-
----
-
-<a id="item-20"></a>
-## [Stress disrupts hippocampal integration of overlapping events, memory inference](https://www.science.org/doi/10.1126/sciadv.aea5496?user_id=66c4bf745d78644b3aa57b08) ⭐️ ?/10
-
-Stress disrupts hippocampal integration of overlapping events, memory inference
-
-hackernews · gmays · 5月27日 16:26 · [社区讨论](https://news.ycombinator.com/item?id=48296622)
 
 ---
