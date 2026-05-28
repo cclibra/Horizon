@@ -98,6 +98,11 @@ class HorizonOrchestrator:
                 if score_meets_threshold(item.ai_score, threshold)
             ]
             important_items.sort(key=lambda x: x.ai_score or 0, reverse=True)
+            if threshold <= 0 and len(important_items) > 20:
+                self.console.print(
+                    f"🧪 Threshold is {threshold}; limiting fallback digest to top 20 items\n"
+                )
+                important_items = important_items[:20]
 
             self.console.print(
                 f"⭐️ {len(important_items)} items scored ≥ {threshold}\n"
