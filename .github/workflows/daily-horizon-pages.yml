@@ -46,7 +46,8 @@
         - name: Run Horizon
           env:
             OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-            HORIZON_AI_BASE_URL: ${{ secrets.HORIZON_AI_BASE_URL }}
+            HORIZON_AI_BASE_URL: ${{ vars.HORIZON_AI_BASE_URL }}
+            HORIZON_AI_MODEL_NAME: ${{ vars.HORIZON_AI_MODEL_NAME }}
             DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
             ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
             GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
