@@ -5,7 +5,7 @@ date: 2026-05-28
 lang: zh
 ---
 
-> 从 113 条内容中筛选出 20 条重要资讯。
+> 从 114 条内容中筛选出 20 条重要资讯。
 
 ---
 
@@ -19,16 +19,16 @@ lang: zh
 8. [What Apple and Google are doing to push notifications](#item-8) ⭐️ ?/10
 9. [I'm Getting into Mesh Networks (Meshtastic, MeshCore, and Reticulum)](#item-9) ⭐️ ?/10
 10. [Rust (and Slint) on a Jailbroken Kindle](#item-10) ⭐️ ?/10
-11. [FBI Arrests CIA Official with $40M in Gold Bars in His Home](#item-11) ⭐️ ?/10
-12. [Can we have the day off?](#item-12) ⭐️ ?/10
-13. [DuckDuckGo search saw 28% more visits after Google said people love AI mode](#item-13) ⭐️ ?/10
+11. [DuckDuckGo search saw 28% more visits after Google said people love AI mode](#item-11) ⭐️ ?/10
+12. [FBI Arrests CIA Official with $40M in Gold Bars in His Home](#item-12) ⭐️ ?/10
+13. [Can we have the day off?](#item-13) ⭐️ ?/10
 14. [Google employee charged with $1M Polymarket insider trading bet on search term](#item-14) ⭐️ ?/10
 15. [Incident with Pull Requests, Issues, Git Operations and API Requests](#item-15) ⭐️ ?/10
 16. [Go: Support for Generic Methods](#item-16) ⭐️ ?/10
 17. [Mini Micro Fantasy Computer](#item-17) ⭐️ ?/10
 18. [Stress disrupts hippocampal integration of overlapping events, memory inference](#item-18) ⭐️ ?/10
-19. [Gemini, Gophers, and Fingers. Oh My Alternative Internets Beyond HTTPS](#item-19) ⭐️ ?/10
-20. [Canada to order military plane fleet from Sweden in shift from US suppliers](#item-20) ⭐️ ?/10
+19. [Canada to order military plane fleet from Sweden in shift from US suppliers](#item-19) ⭐️ ?/10
+20. [Gemini, Gophers, and Fingers. Oh My Alternative Internets Beyond HTTPS](#item-20) ⭐️ ?/10
 
 ---
 
@@ -123,6 +123,15 @@ hackernews · homarp · 5月27日 19:51 · [社区讨论](https://news.ycombinat
 ---
 
 <a id="item-11"></a>
+## [DuckDuckGo search saw 28% more visits after Google said people love AI mode](https://www.pcgamer.com/hardware/duckduckgos-ai-free-search-saw-nearly-28-percent-more-visits-in-the-week-following-googles-insistence-that-people-love-ai-mode/) ⭐️ ?/10
+
+DuckDuckGo search saw 28% more visits after Google said people love AI mode
+
+hackernews · HelloUsername · 5月27日 16:28 · [社区讨论](https://news.ycombinator.com/item?id=48296649)
+
+---
+
+<a id="item-12"></a>
 ## [FBI Arrests CIA Official with $40M in Gold Bars in His Home](https://www.nytimes.com/2026/05/27/us/politics/fbi-arrest-cia-official-gold-bars.html) ⭐️ ?/10
 
 FBI Arrests CIA Official with $40M in Gold Bars in His Home
@@ -131,21 +140,12 @@ hackernews · cwwc · 5月27日 23:23 · [社区讨论](https://news.ycombinator
 
 ---
 
-<a id="item-12"></a>
+<a id="item-13"></a>
 ## [Can we have the day off?](https://mlsu.io/posts/day-off/) ⭐️ ?/10
 
 Can we have the day off?
 
 hackernews · mlsu · 5月28日 00:40 · [社区讨论](https://news.ycombinator.com/item?id=48302745)
-
----
-
-<a id="item-13"></a>
-## [DuckDuckGo search saw 28% more visits after Google said people love AI mode](https://www.pcgamer.com/hardware/duckduckgos-ai-free-search-saw-nearly-28-percent-more-visits-in-the-week-following-googles-insistence-that-people-love-ai-mode/) ⭐️ ?/10
-
-DuckDuckGo search saw 28% more visits after Google said people love AI mode
-
-hackernews · HelloUsername · 5月27日 16:28 · [社区讨论](https://news.ycombinator.com/item?id=48296649)
 
 ---
 
@@ -195,19 +195,19 @@ hackernews · gmays · 5月27日 16:26 · [社区讨论](https://news.ycombinato
 ---
 
 <a id="item-19"></a>
-## [Gemini, Gophers, and Fingers. Oh My Alternative Internets Beyond HTTPS](https://brennan.day/gemini-gophers-and-fingers-oh-my-alternative-internets-beyond-https/) ⭐️ ?/10
-
-Gemini, Gophers, and Fingers. Oh My Alternative Internets Beyond HTTPS
-
-hackernews · ChrisArchitect · 5月27日 17:24 · [社区讨论](https://news.ycombinator.com/item?id=48297467)
-
----
-
-<a id="item-20"></a>
 ## [Canada to order military plane fleet from Sweden in shift from US suppliers](https://www.theguardian.com/world/2026/may/27/canada-sweden-saab-globaleye-aircraft) ⭐️ ?/10
 
 Canada to order military plane fleet from Sweden in shift from US suppliers
 
 hackernews · tosh · 5月27日 16:53 · [社区讨论](https://news.ycombinator.com/item?id=48296994)
+
+---
+
+<a id="item-20"></a>
+## [Gemini, Gophers, and Fingers. Oh My Alternative Internets Beyond HTTPS](https://brennan.day/gemini-gophers-and-fingers-oh-my-alternative-internets-beyond-https/) ⭐️ ?/10
+
+Gemini, Gophers, and Fingers. Oh My Alternative Internets Beyond HTTPS
+
+hackernews · ChrisArchitect · 5月27日 17:24 · [社区讨论](https://news.ycombinator.com/item?id=48297467)
 
 ---
