@@ -12,23 +12,23 @@ lang: zh
 1. [langchain-ai/langchain released langchain-perplexity==1.3.1](#item-1) ⭐️ ?/10
 2. [langchain-ai/langchain released langchain-perplexity==1.3.0](#item-2) ⭐️ ?/10
 3. [langchain-ai/langchain released langchain-fireworks==1.4.2](#item-3) ⭐️ ?/10
-4. [langchain-ai/langchain released langchain==1.3.2](#item-4) ⭐️ ?/10
-5. [YouTube to automatically label AI-generated videos](#item-5) ⭐️ ?/10
-6. [Can we have the day off?](#item-6) ⭐️ ?/10
-7. [I think Anthropic and OpenAI have found product-market fit](#item-7) ⭐️ ?/10
+4. [YouTube to automatically label AI-generated videos](#item-4) ⭐️ ?/10
+5. [Hallucinate – Massively Multiplayer Online Rave](#item-5) ⭐️ ?/10
+6. [I think Anthropic and OpenAI have found product-market fit](#item-6) ⭐️ ?/10
+7. [SimCity 3k in 4k (2025)](#item-7) ⭐️ ?/10
 8. [What Apple and Google are doing to push notifications](#item-8) ⭐️ ?/10
-9. [SimCity 3k in 4k (2025)](#item-9) ⭐️ ?/10
-10. [I'm Getting into Mesh Networks (Meshtastic, MeshCore, and Reticulum)](#item-10) ⭐️ ?/10
-11. [Rust (and Slint) on a Jailbroken Kindle](#item-11) ⭐️ ?/10
-12. [FBI Arrests CIA Official with $40M in Gold Bars in His Home](#item-12) ⭐️ ?/10
+9. [I'm Getting into Mesh Networks (Meshtastic, MeshCore, and Reticulum)](#item-9) ⭐️ ?/10
+10. [Rust (and Slint) on a Jailbroken Kindle](#item-10) ⭐️ ?/10
+11. [FBI Arrests CIA Official with $40M in Gold Bars in His Home](#item-11) ⭐️ ?/10
+12. [Can we have the day off?](#item-12) ⭐️ ?/10
 13. [DuckDuckGo search saw 28% more visits after Google said people love AI mode](#item-13) ⭐️ ?/10
 14. [Google employee charged with $1M Polymarket insider trading bet on search term](#item-14) ⭐️ ?/10
 15. [Incident with Pull Requests, Issues, Git Operations and API Requests](#item-15) ⭐️ ?/10
 16. [Go: Support for Generic Methods](#item-16) ⭐️ ?/10
 17. [Mini Micro Fantasy Computer](#item-17) ⭐️ ?/10
-18. [Canada to order military plane fleet from Sweden in shift from US suppliers](#item-18) ⭐️ ?/10
+18. [Stress disrupts hippocampal integration of overlapping events, memory inference](#item-18) ⭐️ ?/10
 19. [Gemini, Gophers, and Fingers. Oh My Alternative Internets Beyond HTTPS](#item-19) ⭐️ ?/10
-20. [Last.fm is now independent](#item-20) ⭐️ ?/10
+20. [Canada to order military plane fleet from Sweden in shift from US suppliers](#item-20) ⭐️ ?/10
 
 ---
 
@@ -60,15 +60,6 @@ github · github-actions[bot] · 5月27日 18:10
 ---
 
 <a id="item-4"></a>
-## [langchain-ai/langchain released langchain==1.3.2](https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.3.2) ⭐️ ?/10
-
-langchain-ai/langchain released langchain==1.3.2
-
-github · github-actions[bot] · 5月26日 18:18
-
----
-
-<a id="item-5"></a>
 ## [YouTube to automatically label AI-generated videos](https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/) ⭐️ ?/10
 
 YouTube to automatically label AI-generated videos
@@ -77,21 +68,30 @@ hackernews · nopg · 5月27日 20:00 · [社区讨论](https://news.ycombinator
 
 ---
 
-<a id="item-6"></a>
-## [Can we have the day off?](https://mlsu.io/posts/day-off/) ⭐️ ?/10
+<a id="item-5"></a>
+## [Hallucinate – Massively Multiplayer Online Rave](https://hallucinate.site/) ⭐️ ?/10
 
-Can we have the day off?
+Hallucinate – Massively Multiplayer Online Rave
 
-hackernews · mlsu · 5月28日 00:40 · [社区讨论](https://news.ycombinator.com/item?id=48302745)
+hackernews · stagas · 5月28日 03:50 · [社区讨论](https://news.ycombinator.com/item?id=48304260)
 
 ---
 
-<a id="item-7"></a>
+<a id="item-6"></a>
 ## [I think Anthropic and OpenAI have found product-market fit](https://simonwillison.net/2026/May/27/product-market-fit/#atom-everything) ⭐️ ?/10
 
 I think Anthropic and OpenAI have found product-market fit
 
 rss · Simon Willison · 5月27日 16:38 · [社区讨论](https://news.ycombinator.com/item?id=48296794)
+
+---
+
+<a id="item-7"></a>
+## [SimCity 3k in 4k (2025)](https://www.thran.uk/writ/hdid/2025/12/simcity-3k-in-4k.html) ⭐️ ?/10
+
+SimCity 3k in 4k (2025)
+
+hackernews · speckx · 5月27日 17:36 · [社区讨论](https://news.ycombinator.com/item?id=48297645)
 
 ---
 
@@ -105,15 +105,6 @@ hackernews · iamacyborg · 5月27日 19:24 · [社区讨论](https://news.ycomb
 ---
 
 <a id="item-9"></a>
-## [SimCity 3k in 4k (2025)](https://www.thran.uk/writ/hdid/2025/12/simcity-3k-in-4k.html) ⭐️ ?/10
-
-SimCity 3k in 4k (2025)
-
-hackernews · speckx · 5月27日 17:36 · [社区讨论](https://news.ycombinator.com/item?id=48297645)
-
----
-
-<a id="item-10"></a>
 ## [I'm Getting into Mesh Networks (Meshtastic, MeshCore, and Reticulum)](https://www.jonaharagon.com/posts/im-getting-into-mesh-networks-meshtastic-meshcore-and-reticulum/) ⭐️ ?/10
 
 I'm Getting into Mesh Networks (Meshtastic, MeshCore, and Reticulum)
@@ -122,7 +113,7 @@ hackernews · Panda_ · 5月27日 19:52 · [社区讨论](https://news.ycombinat
 
 ---
 
-<a id="item-11"></a>
+<a id="item-10"></a>
 ## [Rust (and Slint) on a Jailbroken Kindle](https://sverre.me/blog/rust-on-kindle/) ⭐️ ?/10
 
 Rust (and Slint) on a Jailbroken Kindle
@@ -131,12 +122,21 @@ hackernews · homarp · 5月27日 19:51 · [社区讨论](https://news.ycombinat
 
 ---
 
-<a id="item-12"></a>
+<a id="item-11"></a>
 ## [FBI Arrests CIA Official with $40M in Gold Bars in His Home](https://www.nytimes.com/2026/05/27/us/politics/fbi-arrest-cia-official-gold-bars.html) ⭐️ ?/10
 
 FBI Arrests CIA Official with $40M in Gold Bars in His Home
 
 hackernews · cwwc · 5月27日 23:23 · [社区讨论](https://news.ycombinator.com/item?id=48302151)
+
+---
+
+<a id="item-12"></a>
+## [Can we have the day off?](https://mlsu.io/posts/day-off/) ⭐️ ?/10
+
+Can we have the day off?
+
+hackernews · mlsu · 5月28日 00:40 · [社区讨论](https://news.ycombinator.com/item?id=48302745)
 
 ---
 
@@ -186,11 +186,11 @@ hackernews · nicoloren · 5月27日 09:56 · [社区讨论](https://news.ycombi
 ---
 
 <a id="item-18"></a>
-## [Canada to order military plane fleet from Sweden in shift from US suppliers](https://www.theguardian.com/world/2026/may/27/canada-sweden-saab-globaleye-aircraft) ⭐️ ?/10
+## [Stress disrupts hippocampal integration of overlapping events, memory inference](https://www.science.org/doi/10.1126/sciadv.aea5496?user_id=66c4bf745d78644b3aa57b08) ⭐️ ?/10
 
-Canada to order military plane fleet from Sweden in shift from US suppliers
+Stress disrupts hippocampal integration of overlapping events, memory inference
 
-hackernews · tosh · 5月27日 16:53 · [社区讨论](https://news.ycombinator.com/item?id=48296994)
+hackernews · gmays · 5月27日 16:26 · [社区讨论](https://news.ycombinator.com/item?id=48296622)
 
 ---
 
@@ -204,10 +204,10 @@ hackernews · ChrisArchitect · 5月27日 17:24 · [社区讨论](https://news.y
 ---
 
 <a id="item-20"></a>
-## [Last.fm is now independent](https://support.last.fm/t/last-fm-is-now-independent/118591) ⭐️ ?/10
+## [Canada to order military plane fleet from Sweden in shift from US suppliers](https://www.theguardian.com/world/2026/may/27/canada-sweden-saab-globaleye-aircraft) ⭐️ ?/10
 
-Last.fm is now independent
+Canada to order military plane fleet from Sweden in shift from US suppliers
 
-hackernews · twistslider · 5月27日 15:36 · [社区讨论](https://news.ycombinator.com/item?id=48295892)
+hackernews · tosh · 5月27日 16:53 · [社区讨论](https://news.ycombinator.com/item?id=48296994)
 
 ---
