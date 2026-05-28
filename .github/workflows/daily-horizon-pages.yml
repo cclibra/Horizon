@@ -61,6 +61,18 @@
             find docs/_posts -maxdepth 1 -type f -name '*.md' -print
             test "$(find docs/_posts -maxdepth 1 -type f -name '*.md' | wc -l)" -gt 0
 
+        - name: Sync posts for main branch Pages source
+          run: |
+            mkdir -p _posts
+            cp docs/_posts/*.md _posts/
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add _posts
+            if ! git diff --cached --quiet; then
+              git commit -m "Update Horizon summaries [skip ci]"
+              git push
+            fi
+
         - name: Set current date
           run: echo "DATE=$(date +'%Y-%m-%d')" >> "$GITHUB_ENV"
 

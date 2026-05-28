@@ -1,0 +1,23 @@
+theme: jekyll-theme-cayman
+title: Horizon Daily
+description: AI-curated daily digest of tech and research news
+baseurl: "/Horizon"
+url: "https://cclibra.github.io"
+
+markdown: kramdown
+future: true
+plugins:
+  - jekyll-feed
+feed:
+  path: feed.xml
+exclude:
+  - ".github"
+  - "node_modules"
+  - "data"
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
