@@ -43,6 +43,101 @@
         - name: Prepare config
           run: cp data/config.github.json data/config.json
 
+        - name: Check AI API configuration
+          env:
+            OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+            HORIZON_AI_BASE_URL: ${{ vars.HORIZON_AI_BASE_URL }}
+            HORIZON_AI_MODEL_NAME: ${{ vars.HORIZON_AI_MODEL_NAME }}
+          run: |
+            python - <<'PY'
+            import json
+            import os
+            import sys
+            import urllib.error
+            import urllib.request
+            from urllib.parse import urlparse
+
+            api_key = os.environ.get("OPENAI_API_KEY", "").strip()
+            base_url = os.environ.get("HORIZON_AI_BASE_URL", "").strip()
+            model = os.environ.get("HORIZON_AI_MODEL_NAME", "").strip()
+
+            missing = [
+                name
+                for name, value in (
+                    ("OPENAI_API_KEY", api_key),
+                    ("HORIZON_AI_BASE_URL", base_url),
+                    ("HORIZON_AI_MODEL_NAME", model),
+                )
+                if not value
+            ]
+            if missing:
+                for name in missing:
+                    print(f"::error title=Missing AI environment::{name} is empty")
+                sys.exit(1)
+
+            parsed = urlparse(base_url)
+            if parsed.scheme not in ("http", "https") or not parsed.hostname:
+                print("::error title=Invalid AI base URL::HORIZON_AI_BASE_URL must be an absolute HTTP(S) URL")
+                sys.exit(1)
+
+            endpoint = base_url.rstrip("/")
+            if not endpoint.endswith("/chat/completions"):
+                endpoint = f"{endpoint}/chat/completions"
+
+            print(f"AI model: {model}")
+            print(f"AI base URL host: {parsed.hostname}")
+
+            payload = {
+                "model": model,
+                "messages": [
+                    {"role": "system", "content": "You are a health check endpoint."},
+                    {"role": "user", "content": "Reply with exactly: ok"},
+                ],
+                "max_tokens": 8,
+            }
+            req = urllib.request.Request(
+                endpoint,
+                data=json.dumps(payload).encode("utf-8"),
+                headers={
+                    "Authorization": f"Bearer {api_key}",
+                    "Content-Type": "application/json",
+                },
+                method="POST",
+            )
+
+            try:
+                with urllib.request.urlopen(req, timeout=45) as resp:
+                    body = resp.read().decode("utf-8", errors="replace")
+                    status = resp.status
+            except urllib.error.HTTPError as exc:
+                body = exc.read().decode("utf-8", errors="replace").replace(api_key, "***")
+                print(f"::error title=AI API probe failed::HTTP {exc.code}")
+                print(body[:1200])
+                sys.exit(1)
+            except Exception as exc:
+                print(f"::error title=AI API probe failed::{type(exc).__name__}: {exc}")
+                sys.exit(1)
+
+            if status < 200 or status >= 300:
+                print(f"::error title=AI API probe failed::HTTP {status}")
+                print(body[:1200].replace(api_key, "***"))
+                sys.exit(1)
+
+            try:
+                data = json.loads(body)
+                content = data["choices"][0]["message"]["content"]
+            except Exception as exc:
+                print(f"::error title=AI API probe returned unexpected JSON::{type(exc).__name__}: {exc}")
+                print(body[:1200].replace(api_key, "***"))
+                sys.exit(1)
+
+            if not str(content).strip():
+                print("::error title=AI API probe returned empty content::choices[0].message.content is empty")
+                sys.exit(1)
+
+            print("AI API probe succeeded.")
+            PY
+
         - name: Run Horizon
           env:
             OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
