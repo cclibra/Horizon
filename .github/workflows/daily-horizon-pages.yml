@@ -86,14 +86,16 @@
 
             print(f"AI model: {model}")
             print(f"AI base URL host: {parsed.hostname}")
+            print(f"AI probe endpoint path: {urlparse(endpoint).path}")
 
             payload = {
                 "model": model,
                 "messages": [
-                    {"role": "system", "content": "You are a health check endpoint."},
-                    {"role": "user", "content": "Reply with exactly: ok"},
+                    {"role": "system", "content": "You are a JSON health check endpoint."},
+                    {"role": "user", "content": "Reply with a JSON object containing status=ok."},
                 ],
                 "max_tokens": 8,
+                "response_format": {"type": "json_object"},
             }
             req = urllib.request.Request(
                 endpoint,
