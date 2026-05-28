@@ -25,6 +25,7 @@ from .ai.analyzer import ContentAnalyzer
 from .ai.summarizer import DailySummarizer
 from .ai.enricher import ContentEnricher
 from .ai.tokens import get_usage_snapshot
+from .filtering import score_meets_threshold
 
 
 class HorizonOrchestrator:
@@ -94,7 +95,7 @@ class HorizonOrchestrator:
             threshold = self.config.filtering.ai_score_threshold
             important_items = [
                 item for item in analyzed_items
-                if item.ai_score and item.ai_score >= threshold
+                if score_meets_threshold(item.ai_score, threshold)
             ]
             important_items.sort(key=lambda x: x.ai_score or 0, reverse=True)
 

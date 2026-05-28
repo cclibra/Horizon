@@ -23,6 +23,7 @@ from .horizon_adapter import (
     resolve_horizon_path,
 )
 from .run_store import RunStore
+from ..filtering import score_meets_threshold
 from ..services.webhook import WebhookNotifier
 
 
@@ -285,7 +286,10 @@ class HorizonPipelineService:
 
         self.run_store.save_items(run_id, "scored", items_to_dicts(scored_items))
         score_threshold = ctx.config.filtering.ai_score_threshold
-        above_threshold = [x for x in scored_items if x.ai_score and x.ai_score >= score_threshold]
+        above_threshold = [
+            x for x in scored_items
+            if score_meets_threshold(x.ai_score, score_threshold)
+        ]
 
         meta = self.run_store.update_meta(
             run_id,
@@ -323,7 +327,10 @@ class HorizonPipelineService:
 
         effective_threshold = threshold if threshold is not None else ctx.config.filtering.ai_score_threshold
 
-        important_items = [item for item in items if item.ai_score and item.ai_score >= effective_threshold]
+        important_items = [
+            item for item in items
+            if score_meets_threshold(item.ai_score, effective_threshold)
+        ]
         important_items.sort(key=lambda x: x.ai_score or 0, reverse=True)
 
         before_dedup = len(important_items)

@@ -2,7 +2,7 @@
     "version": "1.0",
     "ai": {
       "provider": "openai",
-      "model": "gpt-5.4-mini",
+      "model": "gpt-4o-mini",
       "api_key_env": "OPENAI_API_KEY",
       "base_url": "${HORIZON_AI_BASE_URL}",
       "temperature": 0.3,
@@ -216,7 +216,7 @@
       }
     },
   "filtering": {
-    "ai_score_threshold": 3.0,
+    "ai_score_threshold": 0.0,
     "time_window_hours": 72
   },
   "email": {
