@@ -2,6 +2,7 @@
 
 import asyncio
 import json
+import os
 import re
 from typing import List, Optional
 from tenacity import retry, stop_after_attempt, wait_exponential
@@ -13,6 +14,7 @@ from .utils import parse_json_response
 from ..models import ContentItem
 
 DEFAULT_THROTTLE_SEC = 0.0
+MAX_DIAGNOSTIC_WARNINGS = 5
 
 
 class ContentAnalyzer:
@@ -41,17 +43,88 @@ class ContentAnalyzer:
         concurrency = getattr(config, "analysis_concurrency", 1)
         return max(concurrency, 1)
 
+    @staticmethod
+    def _sanitize_diagnostic(text: str) -> str:
+        """Remove obvious secret values from diagnostic text."""
+        sanitized = str(text)
+        for env_name in (
+            "OPENAI_API_KEY",
+            "ANTHROPIC_API_KEY",
+            "DASHSCOPE_API_KEY",
+            "GOOGLE_API_KEY",
+            "APIFY_TOKEN",
+            "HORIZON_WEBHOOK_URL",
+        ):
+            value = os.getenv(env_name)
+            if value:
+                sanitized = sanitized.replace(value, "***")
+        sanitized = re.sub(r"Bearer\s+[A-Za-z0-9._~+/=-]+", "Bearer ***", sanitized)
+        return sanitized
+
+    @classmethod
+    def _github_warning(cls, title: str, message: str) -> None:
+        """Emit a GitHub Actions warning annotation when running in Actions."""
+        if os.getenv("GITHUB_ACTIONS") != "true":
+            return
+
+        def escape(value: str) -> str:
+            return (
+                cls._sanitize_diagnostic(value)
+                .replace("%", "%25")
+                .replace("\r", "%0D")
+                .replace("\n", "%0A")
+            )
+
+        print(f"::warning title={escape(title)}::{escape(message)}")
+
+    @classmethod
+    def _exception_diagnostic(cls, exc: Exception) -> str:
+        parts = [type(exc).__name__]
+        for attr in ("status_code", "code", "param"):
+            value = getattr(exc, attr, None)
+            if value:
+                parts.append(f"{attr}={value}")
+        body = getattr(exc, "body", None)
+        if body:
+            parts.append(f"body={body}")
+        else:
+            parts.append(str(exc))
+        return cls._sanitize_diagnostic("; ".join(parts))[:900]
+
     async def analyze_batch(self, items: List[ContentItem]) -> List[ContentItem]:
         throttle_sec = self._get_throttle_sec()
         concurrency = self._get_concurrency()
         semaphore = asyncio.Semaphore(concurrency)
+        stats = {"success": 0, "failed": 0, "parse_failed": 0}
+        warning_count = 0
 
         async def _process(item: ContentItem, index: int, progress_task) -> ContentItem:
+            nonlocal warning_count
             async with semaphore:
                 try:
                     await self._analyze_item(item)
+                    if item.ai_reason == "Analysis response parse failed":
+                        stats["parse_failed"] += 1
+                        excerpt = item.metadata.pop("_horizon_ai_parse_excerpt", "")
+                        if warning_count < MAX_DIAGNOSTIC_WARNINGS:
+                            warning_count += 1
+                            detail = self._sanitize_diagnostic(excerpt)[:500]
+                            self._github_warning(
+                                "Horizon AI analysis parse failed sample",
+                                f"{item.id}: response excerpt={detail}",
+                            )
+                    else:
+                        stats["success"] += 1
                 except Exception as e:
-                    print(f"Error analyzing item {item.id}: {e}")
+                    stats["failed"] += 1
+                    detail = self._exception_diagnostic(e)
+                    print(f"Error analyzing item {item.id}: {detail}")
+                    if warning_count < MAX_DIAGNOSTIC_WARNINGS:
+                        warning_count += 1
+                        self._github_warning(
+                            "Horizon AI analysis failed sample",
+                            f"{item.id}: {detail}",
+                        )
                     item.ai_score = 0.0
                     item.ai_reason = "Analysis failed"
                     item.ai_summary = item.title
@@ -72,6 +145,14 @@ class ContentAnalyzer:
                 _process(item, i, task) for i, item in enumerate(items)
             ]
             analyzed_items = await asyncio.gather(*coros)
+
+        if stats["failed"] or stats["parse_failed"] or stats["success"] == 0:
+            diagnostic = (
+                f"success={stats['success']} failed={stats['failed']} "
+                f"parse_failed={stats['parse_failed']} total={len(items)}"
+            )
+            print(f"AI analysis diagnostics: {diagnostic}")
+            self._github_warning("Horizon AI analysis degraded", diagnostic)
 
         return analyzed_items
 
@@ -149,6 +230,7 @@ class ContentAnalyzer:
         result = self._parse_json_response(response)
         if result is None:
             print(f"Warning: could not parse analysis response for {item.id}, using defaults")
+            item.metadata["_horizon_ai_parse_excerpt"] = response[:500]
             item.ai_score = 0.0
             item.ai_reason = "Analysis response parse failed"
             item.ai_summary = item.title

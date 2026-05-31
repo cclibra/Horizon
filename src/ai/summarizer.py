@@ -10,6 +10,15 @@ _CJK = r"[\u4e00-\u9fff\u3400-\u4dbf]"
 _ASCII = r"[A-Za-z0-9]"
 
 
+def _format_score(score) -> str:
+    """Render missing scores as unknown while preserving real zero scores."""
+    if score is None:
+        return "?"
+    if isinstance(score, (int, float)):
+        return f"{score:g}"
+    return str(score)
+
+
 def _pangu(text: str) -> str:
     """Insert a space between CJK and ASCII letters/digits (Pangu spacing)."""
     text = re.sub(rf"({_CJK})({_ASCII})", r"\1 \2", text)
@@ -105,7 +114,7 @@ class DailySummarizer:
             t = str(_t).replace("[", "(").replace("]", ")")
             if language == "zh":
                 t = _pangu(t)
-            score = item.ai_score or "?"
+            score = _format_score(item.ai_score)
             toc_entries.append(f"{i + 1}. [{t}](#item-{i + 1}) \u2b50\ufe0f {score}/10")
         toc = "\n".join(toc_entries) + "\n\n---\n\n"
 
@@ -143,7 +152,7 @@ class DailySummarizer:
             title = str(item.metadata.get(f"title_{language}") or item.title).replace("[", "(").replace("]", ")")
             if language == "zh":
                 title = _pangu(title)
-            score = item.ai_score or "?"
+            score = _format_score(item.ai_score)
             entries.append(f"{i}. [{title}]({item.url}) \u2b50\ufe0f {score}/10")
 
         return header + "\n".join(entries)
@@ -165,7 +174,7 @@ class DailySummarizer:
         _title = item.metadata.get(f"title_{language}") or item.title
         title = str(_title).replace("[", "(").replace("]", ")")
         url = str(item.url)
-        score = item.ai_score or "?"
+        score = _format_score(item.ai_score)
         meta = item.metadata
 
         summary = (

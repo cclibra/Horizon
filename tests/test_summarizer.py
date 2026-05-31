@@ -60,6 +60,24 @@ def test_generate_webhook_item_renders_single_item_detail():
     assert "**Tags**: `#AI`, `#News`" in result
 
 
+def test_generate_summary_renders_zero_score_as_zero_not_unknown():
+    summarizer = DailySummarizer()
+    item = _make_item(1)
+    item.ai_score = 0.0
+
+    result = _run_async(
+        summarizer.generate_summary(
+            [item],
+            date="2026-04-25",
+            total_fetched=1,
+            language="en",
+        )
+    )
+
+    assert "0/10" in result
+    assert "?/10" not in result
+
+
 def test_generate_webhook_item_includes_discussion_link_when_distinct():
     summarizer = DailySummarizer()
     item = _make_item(1)

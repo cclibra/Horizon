@@ -94,3 +94,22 @@ def test_analyze_batch_concurrent_preserves_order(monkeypatch):
     result = asyncio.run(analyzer.analyze_batch(items))
 
     assert [item.id for item in result] == [item.id for item in items]
+
+
+def test_analyze_batch_emits_github_warning_when_analysis_fails(monkeypatch, capsys):
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+    analyzer = ContentAnalyzer(SimpleNamespace())
+    item = _make_item("rss:test:1")
+
+    async def fake_analyze_item(_item):
+        raise RuntimeError("HTTP 403 forbidden")
+
+    monkeypatch.setattr(analyzer, "_analyze_item", fake_analyze_item)
+
+    result = asyncio.run(analyzer.analyze_batch([item]))
+
+    output = capsys.readouterr().out
+    assert result[0].ai_score == 0.0
+    assert "::warning title=Horizon AI analysis failed sample::" in output
+    assert "::warning title=Horizon AI analysis degraded::" in output
+    assert "success=0 failed=1 parse_failed=0 total=1" in output
