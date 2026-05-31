@@ -65,9 +65,12 @@
                     with open(summary_path, "a", encoding="utf-8") as f:
                         f.write(line + "\n")
 
+            def sanitize(text: str) -> str:
+                return text.replace(api_key, "***") if api_key else text
+
             def warn(title: str, message: str) -> None:
-                print(f"::warning title={title}::{message}")
-                add_summary(f"- WARNING: {title}: {message}")
+                print(f"::warning title={title}::{sanitize(message)}")
+                add_summary(f"- WARNING: {title}: {sanitize(message)}")
 
             add_summary("### AI API probe")
 
@@ -105,62 +108,115 @@
             add_summary(f"- Base URL host: `{parsed.hostname}`")
             add_summary(f"- Probe endpoint path: `{urlparse(endpoint).path}`")
 
-            payload = {
-                "model": model,
-                "messages": [
-                    {"role": "system", "content": "You are a JSON health check endpoint."},
-                    {"role": "user", "content": "Reply with a JSON object containing status=ok."},
-                ],
-                "max_tokens": 8,
-                "response_format": {"type": "json_object"},
-            }
-            req = urllib.request.Request(
-                endpoint,
-                data=json.dumps(payload).encode("utf-8"),
-                headers={
-                    "Authorization": f"Bearer {api_key}",
-                    "Content-Type": "application/json",
-                },
-                method="POST",
-            )
-
-            try:
-                with urllib.request.urlopen(req, timeout=45) as resp:
-                    body = resp.read().decode("utf-8", errors="replace")
-                    status = resp.status
-            except urllib.error.HTTPError as exc:
-                body = exc.read().decode("utf-8", errors="replace").replace(api_key, "***")
-                warn("AI API probe failed", f"HTTP {exc.code}")
-                print(body[:1200])
+            def make_request(name: str, payload: dict) -> tuple[int | None, str]:
                 add_summary("")
-                add_summary("Response excerpt:")
-                add_summary("```")
-                add_summary(body[:1200])
-                add_summary("```")
-                sys.exit(0)
-            except Exception as exc:
-                warn("AI API probe failed", f"{type(exc).__name__}: {exc}")
-                sys.exit(0)
+                add_summary(f"#### Probe: {name}")
+                add_summary(f"- Payload keys: `{', '.join(payload.keys())}`")
+                if "response_format" in payload:
+                    add_summary("- response_format: `json_object`")
+                if "temperature" in payload:
+                    add_summary(f"- temperature: `{payload['temperature']}`")
+                if "max_tokens" in payload:
+                    add_summary(f"- max_tokens: `{payload['max_tokens']}`")
 
-            if status < 200 or status >= 300:
-                warn("AI API probe failed", f"HTTP {status}")
-                print(body[:1200].replace(api_key, "***"))
-                sys.exit(0)
+                req = urllib.request.Request(
+                    endpoint,
+                    data=json.dumps(payload).encode("utf-8"),
+                    headers={
+                        "Authorization": f"Bearer {api_key}",
+                        "Content-Type": "application/json",
+                        "User-Agent": "Horizon-Actions-AI-Probe/1.0",
+                    },
+                    method="POST",
+                )
 
-            try:
-                data = json.loads(body)
-                content = data["choices"][0]["message"]["content"]
-            except Exception as exc:
-                warn("AI API probe returned unexpected JSON", f"{type(exc).__name__}: {exc}")
-                print(body[:1200].replace(api_key, "***"))
-                sys.exit(0)
+                try:
+                    with urllib.request.urlopen(req, timeout=45) as resp:
+                        body = resp.read().decode("utf-8", errors="replace")
+                        status = resp.status
+                except urllib.error.HTTPError as exc:
+                    body = sanitize(exc.read().decode("utf-8", errors="replace"))
+                    warn(f"AI API probe failed: {name}", f"HTTP {exc.code}")
+                    print(f"[{name}] HTTP {exc.code}")
+                    print(body[:1200])
+                    add_summary(f"- Result: HTTP `{exc.code}`")
+                    add_summary("- Response excerpt:")
+                    add_summary("```")
+                    add_summary(body[:1200])
+                    add_summary("```")
+                    return exc.code, body
+                except Exception as exc:
+                    warn(f"AI API probe failed: {name}", f"{type(exc).__name__}: {exc}")
+                    print(f"[{name}] {type(exc).__name__}: {exc}")
+                    add_summary(f"- Result: `{type(exc).__name__}: {sanitize(str(exc))}`")
+                    return None, str(exc)
 
-            if not str(content).strip():
-                warn("AI API probe returned empty content", "choices[0].message.content is empty")
-                sys.exit(0)
+                safe_body = sanitize(body)
+                print(f"[{name}] HTTP {status}")
+                add_summary(f"- Result: HTTP `{status}`")
 
-            print("AI API probe succeeded.")
-            add_summary("- Result: API probe succeeded.")
+                try:
+                    data = json.loads(body)
+                    content = data["choices"][0]["message"]["content"]
+                    add_summary(f"- Parsed choices[0].message.content: `{str(content)[:160]}`")
+                except Exception as exc:
+                    warn(f"AI API probe returned unexpected JSON: {name}", f"{type(exc).__name__}: {exc}")
+                    print(safe_body[:1200])
+                    add_summary("- Response excerpt:")
+                    add_summary("```")
+                    add_summary(safe_body[:1200])
+                    add_summary("```")
+
+                return status, body
+
+            base_messages = [
+                {"role": "system", "content": "You are a concise health check endpoint."},
+                {"role": "user", "content": "Reply with exactly: ok"},
+            ]
+            json_messages = [
+                {"role": "system", "content": "You are a JSON health check endpoint."},
+                {"role": "user", "content": "Reply with a JSON object containing status=ok."},
+            ]
+
+            probes = [
+                (
+                    "minimal",
+                    {
+                        "model": model,
+                        "messages": base_messages,
+                        "max_tokens": 8,
+                    },
+                ),
+                (
+                    "json-mode",
+                    {
+                        "model": model,
+                        "messages": json_messages,
+                        "max_tokens": 8,
+                        "response_format": {"type": "json_object"},
+                    },
+                ),
+                (
+                    "horizon-like",
+                    {
+                        "model": model,
+                        "messages": json_messages,
+                        "max_tokens": 8192,
+                        "temperature": 0.3,
+                        "response_format": {"type": "json_object"},
+                    },
+                ),
+            ]
+
+            results = []
+            for name, payload in probes:
+                status, _ = make_request(name, payload)
+                results.append((name, status))
+
+            summary = ", ".join(f"{name}={status}" for name, status in results)
+            print(f"AI probe summary: {summary}")
+            add_summary("")
+            add_summary(f"- Probe summary: `{summary}`")
             PY
 
         - name: Run Horizon
