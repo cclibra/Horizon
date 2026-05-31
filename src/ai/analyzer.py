@@ -79,17 +79,36 @@ class ContentAnalyzer:
 
     @classmethod
     def _exception_diagnostic(cls, exc: Exception) -> str:
-        parts = [type(exc).__name__]
+        root = cls._root_exception(exc)
+        if root is exc:
+            parts = [type(exc).__name__]
+        else:
+            parts = [f"{type(exc).__name__}->{type(root).__name__}"]
         for attr in ("status_code", "code", "param"):
-            value = getattr(exc, attr, None)
+            value = getattr(root, attr, None)
             if value:
                 parts.append(f"{attr}={value}")
-        body = getattr(exc, "body", None)
+        response = getattr(root, "response", None)
+        response_status = getattr(response, "status_code", None)
+        if response_status and not any(part.startswith("status_code=") for part in parts):
+            parts.append(f"status_code={response_status}")
+        body = getattr(root, "body", None)
         if body:
             parts.append(f"body={body}")
         else:
-            parts.append(str(exc))
+            parts.append(str(root))
         return cls._sanitize_diagnostic("; ".join(parts))[:900]
+
+    @staticmethod
+    def _root_exception(exc: Exception) -> Exception:
+        last_attempt = getattr(exc, "last_attempt", None)
+        if last_attempt is None:
+            return exc
+        try:
+            nested = last_attempt.exception()
+        except Exception:
+            return exc
+        return nested or exc
 
     async def analyze_batch(self, items: List[ContentItem]) -> List[ContentItem]:
         throttle_sec = self._get_throttle_sec()
