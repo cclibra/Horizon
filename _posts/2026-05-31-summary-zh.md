@@ -23,8 +23,8 @@ lang: zh
 12. [Jef Raskin, the Visionary Behind the Mac (2013)](#item-12) ⭐️ 0/10
 13. [Parallel Reconstruction of Lawful TLS Wiretapping](#item-13) ⭐️ 0/10
 14. [Cheese Paper: a text editor specifically designed for writing](#item-14) ⭐️ 0/10
-15. [OpenRouter raises $113M Series B](#item-15) ⭐️ 0/10
-16. [Pandoc Templates](#item-16) ⭐️ 0/10
+15. [Pandoc Templates](#item-15) ⭐️ 0/10
+16. [OpenRouter raises $113M Series B](#item-16) ⭐️ 0/10
 17. [Show HN: 500 years of Joseon court omens as an observability dashboard](#item-17) ⭐️ 0/10
 18. [Microcode inside the Intel 8087 floating-point chip: register exchange](#item-18) ⭐️ 0/10
 19. [Dusklight – GC Twilight Princess Decompiled](#item-19) ⭐️ 0/10
@@ -159,20 +159,20 @@ hackernews · sohkamyung · 5月30日 22:58 · [社区讨论](https://news.ycomb
 ---
 
 <a id="item-15"></a>
-## [OpenRouter raises $113M Series B](https://openrouter.ai/announcements/series-b) ⭐️ 0/10
-
-OpenRouter raises $113M Series B
-
-hackernews · freeCandy · 5月30日 17:27 · [社区讨论](https://news.ycombinator.com/item?id=48338660)
-
----
-
-<a id="item-16"></a>
 ## [Pandoc Templates](https://pandoc-templates.org/) ⭐️ 0/10
 
 Pandoc Templates
 
 hackernews · ankitg12 · 5月30日 09:56 · [社区讨论](https://news.ycombinator.com/item?id=48334515)
+
+---
+
+<a id="item-16"></a>
+## [OpenRouter raises $113M Series B](https://openrouter.ai/announcements/series-b) ⭐️ 0/10
+
+OpenRouter raises $113M Series B
+
+hackernews · freeCandy · 5月30日 17:27 · [社区讨论](https://news.ycombinator.com/item?id=48338660)
 
 ---
 
