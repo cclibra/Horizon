@@ -5,7 +5,7 @@ date: 2026-05-31
 lang: zh
 ---
 
-> 从 87 条内容中筛选出 20 条重要资讯。
+> 从 84 条内容中筛选出 20 条重要资讯。
 
 ---
 
@@ -16,19 +16,19 @@ lang: zh
 5. [Shantell Sans (2023)](#item-5) ⭐️ 0/10
 6. [The AV2 Video Standard Has Released (Final v1.0 Specification)](#item-6) ⭐️ 0/10
 7. [Accenture to acquire Ookla](#item-7) ⭐️ 0/10
-8. [Microsoft Office 2019 and 2021 for Mac view-only conversion](#item-8) ⭐️ 0/10
-9. [Mechanical Pencil: An illustrated celebration of the engineering around us](#item-9) ⭐️ 0/10
+8. [Mechanical Pencil: An illustrated celebration of the engineering around us](#item-8) ⭐️ 0/10
+9. [Microsoft Office 2019 and 2021 for Mac view-only conversion](#item-9) ⭐️ 0/10
 10. [Openrsync: An implementation of rsync, by the OpenBSD team](#item-10) ⭐️ 0/10
 11. [Voxel Space (2017)](#item-11) ⭐️ 0/10
 12. [Zig ELF Linker Improvements Devlog](#item-12) ⭐️ 0/10
 13. [Pandoc Templates](#item-13) ⭐️ 0/10
-14. [wolfSSL releases a new product; wolfCOSE a zero alloc C embbedded COSE stack](#item-14) ⭐️ 0/10
-15. [Cheese Paper: a text editor specifically designed for writing](#item-15) ⭐️ 0/10
-16. [Parallel Reconstruction of Lawful TLS Wiretapping](#item-16) ⭐️ 0/10
+14. [Cheese Paper: a text editor specifically designed for writing](#item-14) ⭐️ 0/10
+15. [Parallel Reconstruction of Lawful TLS Wiretapping](#item-15) ⭐️ 0/10
+16. [wolfSSL releases a new product; wolfCOSE a zero alloc C embbedded COSE stack](#item-16) ⭐️ 0/10
 17. [OpenRouter raises $113M Series B](#item-17) ⭐️ 0/10
 18. [Jef Raskin, the Visionary Behind the Mac (2013)](#item-18) ⭐️ 0/10
-19. [Microcode inside the Intel 8087 floating-point chip: register exchange](#item-19) ⭐️ 0/10
-20. [Show HN: 500 years of Joseon court omens as an observability dashboard](#item-20) ⭐️ 0/10
+19. [Show HN: 500 years of Joseon court omens as an observability dashboard](#item-19) ⭐️ 0/10
+20. [Microcode inside the Intel 8087 floating-point chip: register exchange](#item-20) ⭐️ 0/10
 
 ---
 
@@ -96,20 +96,20 @@ hackernews · Garbage · 5月30日 16:28 · [社区讨论](https://news.ycombina
 ---
 
 <a id="item-8"></a>
-## [Microsoft Office 2019 and 2021 for Mac view-only conversion](https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)) ⭐️ 0/10
-
-Microsoft Office 2019 and 2021 for Mac view-only conversion
-
-hackernews · antipurist · 5月30日 23:26 · [社区讨论](https://news.ycombinator.com/item?id=48341578)
-
----
-
-<a id="item-9"></a>
 ## [Mechanical Pencil: An illustrated celebration of the engineering around us](https://mechanical-pencil.com/) ⭐️ 0/10
 
 Mechanical Pencil: An illustrated celebration of the engineering around us
 
 hackernews · Muhammad523 · 5月31日 00:25 · [社区讨论](https://news.ycombinator.com/item?id=48341932)
+
+---
+
+<a id="item-9"></a>
+## [Microsoft Office 2019 and 2021 for Mac view-only conversion](https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)) ⭐️ 0/10
+
+Microsoft Office 2019 and 2021 for Mac view-only conversion
+
+hackernews · antipurist · 5月30日 23:26 · [社区讨论](https://news.ycombinator.com/item?id=48341578)
 
 ---
 
@@ -150,15 +150,6 @@ hackernews · ankitg12 · 5月30日 09:56 · [社区讨论](https://news.ycombin
 ---
 
 <a id="item-14"></a>
-## [wolfSSL releases a new product; wolfCOSE a zero alloc C embbedded COSE stack](https://github.com/wolfSSL/wolfCOSE) ⭐️ 0/10
-
-wolfSSL releases a new product; wolfCOSE a zero alloc C embbedded COSE stack
-
-hackernews · aidangarske · 5月30日 20:42 · [社区讨论](https://news.ycombinator.com/item?id=48340422)
-
----
-
-<a id="item-15"></a>
 ## [Cheese Paper: a text editor specifically designed for writing](https://brie.gay/cheese-paper/) ⭐️ 0/10
 
 Cheese Paper: a text editor specifically designed for writing
@@ -167,12 +158,21 @@ hackernews · sohkamyung · 5月30日 22:58 · [社区讨论](https://news.ycomb
 
 ---
 
-<a id="item-16"></a>
+<a id="item-15"></a>
 ## [Parallel Reconstruction of Lawful TLS Wiretapping](https://remyhax.xyz/posts/reproducing-lawful-tls-wiretapping/) ⭐️ 0/10
 
 Parallel Reconstruction of Lawful TLS Wiretapping
 
 hackernews · jerrythegerbil · 5月30日 19:47 · [社区讨论](https://news.ycombinator.com/item?id=48339943)
+
+---
+
+<a id="item-16"></a>
+## [wolfSSL releases a new product; wolfCOSE a zero alloc C embbedded COSE stack](https://github.com/wolfSSL/wolfCOSE) ⭐️ 0/10
+
+wolfSSL releases a new product; wolfCOSE a zero alloc C embbedded COSE stack
+
+hackernews · aidangarske · 5月30日 20:42 · [社区讨论](https://news.ycombinator.com/item?id=48340422)
 
 ---
 
@@ -195,19 +195,19 @@ hackernews · tylerdane · 5月30日 19:42 · [社区讨论](https://news.ycombi
 ---
 
 <a id="item-19"></a>
-## [Microcode inside the Intel 8087 floating-point chip: register exchange](https://www.righto.com/2026/05/microcode-inside-intel-8087-floating.html) ⭐️ 0/10
-
-Microcode inside the Intel 8087 floating-point chip: register exchange
-
-hackernews · pwg · 5月30日 17:27 · [社区讨论](https://news.ycombinator.com/item?id=48338656)
-
----
-
-<a id="item-20"></a>
 ## [Show HN: 500 years of Joseon court omens as an observability dashboard](https://ajin.im/is/building/omen.ops/) ⭐️ 0/10
 
 Show HN: 500 years of Joseon court omens as an observability dashboard
 
 hackernews · poppypetalmask · 5月30日 19:23 · [社区讨论](https://news.ycombinator.com/item?id=48339753)
+
+---
+
+<a id="item-20"></a>
+## [Microcode inside the Intel 8087 floating-point chip: register exchange](https://www.righto.com/2026/05/microcode-inside-intel-8087-floating.html) ⭐️ 0/10
+
+Microcode inside the Intel 8087 floating-point chip: register exchange
+
+hackernews · pwg · 5月30日 17:27 · [社区讨论](https://news.ycombinator.com/item?id=48338656)
 
 ---
