@@ -120,6 +120,90 @@ class TestOpenAIClientComplete:
         call_kwargs = mock_create.call_args[1]
         assert call_kwargs.get("response_format") == {"type": "json_object"}
 
+    def test_custom_openai_base_url_uses_raw_http_with_probe_user_agent(self, monkeypatch):
+        monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+        client = OpenAIClient(_make_config(
+            provider=AIProvider.OPENAI,
+            api_key_env="OPENAI_API_KEY",
+            base_url="https://gateway.example/v1",
+        ))
+        captured = {}
+
+        class FakeResponse:
+            status_code = 200
+            text = (
+                '{"choices":[{"message":{"content":"{\\"score\\": 8}"}}],'
+                '"usage":{"prompt_tokens":10,"completion_tokens":5}}'
+            )
+
+            def json(self):
+                return {
+                    "choices": [{"message": {"content": '{"score": 8}'}}],
+                    "usage": {"prompt_tokens": 10, "completion_tokens": 5},
+                }
+
+        class FakeAsyncClient:
+            def __init__(self, **kwargs):
+                captured["client_kwargs"] = kwargs
+
+            async def __aenter__(self):
+                return self
+
+            async def __aexit__(self, exc_type, exc, tb):
+                return None
+
+            async def post(self, url, headers, json):
+                captured["url"] = url
+                captured["headers"] = headers
+                captured["json"] = json
+                return FakeResponse()
+
+        monkeypatch.setattr("src.ai.client.httpx.AsyncClient", FakeAsyncClient)
+
+        result = asyncio.run(client.complete(system="test", user="hello"))
+
+        assert result == '{"score": 8}'
+        assert captured["url"] == "https://gateway.example/v1/chat/completions"
+        assert captured["headers"]["User-Agent"] == "Horizon-Actions-AI-Probe/1.0"
+        assert captured["json"]["response_format"] == {"type": "json_object"}
+        assert captured["json"]["messages"][0] == {"role": "system", "content": "test"}
+
+    def test_custom_openai_base_url_raises_status_error_with_body(self, monkeypatch):
+        monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+        client = OpenAIClient(_make_config(
+            provider=AIProvider.OPENAI,
+            api_key_env="OPENAI_API_KEY",
+            base_url="https://gateway.example/v1",
+        ))
+
+        class FakeResponse:
+            status_code = 403
+            text = "Your request was blocked."
+
+            def json(self):
+                return {}
+
+        class FakeAsyncClient:
+            def __init__(self, **_kwargs):
+                pass
+
+            async def __aenter__(self):
+                return self
+
+            async def __aexit__(self, exc_type, exc, tb):
+                return None
+
+            async def post(self, url, headers, json):
+                return FakeResponse()
+
+        monkeypatch.setattr("src.ai.client.httpx.AsyncClient", FakeAsyncClient)
+
+        with pytest.raises(Exception) as exc_info:
+            asyncio.run(client.complete(system="test", user="hello"))
+
+        assert "status_code=403" in str(exc_info.value)
+        assert "Your request was blocked." in str(exc_info.value)
+
 
 class TestTemperatureFallback:
     """Retry-without-temperature path for models that deprecated temperature.

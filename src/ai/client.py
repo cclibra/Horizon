@@ -2,7 +2,9 @@
 
 import os
 from abc import ABC, abstractmethod
+from types import SimpleNamespace
 from typing import Optional
+import httpx
 from openai import AsyncAzureOpenAI, AsyncOpenAI
 from anthropic import AsyncAnthropic
 from google import genai
@@ -36,6 +38,15 @@ class AIClient(ABC):
             str: Generated completion text
         """
         pass
+
+
+class OpenAICompatibleRequestError(Exception):
+    """HTTP error from an OpenAI-compatible endpoint."""
+
+    def __init__(self, status_code: int, body: str):
+        self.status_code = status_code
+        self.body = body
+        super().__init__(f"status_code={status_code}; body={body[:900]}")
 
 
 class AnthropicClient(AIClient):
@@ -141,6 +152,9 @@ class OpenAIClient(AIClient):
         if base_url:
             kwargs["base_url"] = base_url
 
+        self.api_key = api_key
+        self.base_url = base_url
+        self._use_raw_http = config.provider == AIProvider.OPENAI and bool(config.base_url)
         self.client = AsyncOpenAI(**kwargs)
         self.model = config.model
         self.temperature = config.temperature
@@ -227,7 +241,42 @@ class OpenAIClient(AIClient):
             request_kwargs["temperature"] = temperature
         if self.provider not in self._NO_RESPONSE_FORMAT:
             request_kwargs["response_format"] = {"type": "json_object"}
+        if self._use_raw_http:
+            return await self._do_raw_request(request_kwargs)
         return await self.client.chat.completions.create(**request_kwargs)
+
+    async def _do_raw_request(self, request_kwargs: dict):
+        endpoint = (self.base_url or "").rstrip("/")
+        if not endpoint.endswith("/chat/completions"):
+            endpoint = f"{endpoint}/chat/completions"
+
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "User-Agent": "Horizon-Actions-AI-Probe/1.0",
+        }
+
+        async with httpx.AsyncClient(timeout=120.0) as client:
+            response = await client.post(endpoint, headers=headers, json=request_kwargs)
+
+        if response.status_code >= 400:
+            raise OpenAICompatibleRequestError(response.status_code, response.text)
+
+        data = response.json()
+        usage = data.get("usage") or {}
+        choices = data.get("choices") or []
+        if not choices:
+            raise ValueError("OpenAI-compatible response missing choices")
+
+        content = choices[0].get("message", {}).get("content")
+        return SimpleNamespace(
+            choices=[SimpleNamespace(message=SimpleNamespace(content=content))],
+            usage=SimpleNamespace(
+                prompt_tokens=usage.get("prompt_tokens", 0),
+                completion_tokens=usage.get("completion_tokens", 0),
+            ),
+        )
 
     @staticmethod
     def _is_temperature_unsupported(message: str) -> bool:
