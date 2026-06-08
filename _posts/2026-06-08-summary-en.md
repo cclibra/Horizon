@@ -9,391 +9,418 @@ lang: en
 
 ---
 
-1. [New drug 'functionally cures' many hepatitis B virus infections](#item-1) ⭐️ 8/10
-2. [How's Linear so fast? A technical breakdown](#item-2) ⭐️ 8/10
-3. [LLMs are eroding my software engineering career and I don't know what to do](#item-3) ⭐️ 8/10
-4. [AI CEOs from OpenAI, Anthropic, and Microsoft set aside their rivalry to warn Congress AI is making it too easy to design and create bioweapons](#item-4) ⭐️ 8/10
-5. [rtk-ai/rtk (+29⭐ past_24_hours)](#item-5) ⭐️ 8/10
-6. [Building from zero after addiction, prison, and a felony](#item-6) ⭐️ 7/10
-7. [DeepSeek V4 Pro beats GPT-5.5 Pro on precision](#item-7) ⭐️ 7/10
-8. [Lathe Uses LLMs for Active Technical Learning](#item-8) ⭐️ 7/10
-9. [Inside an IBM 604 thyratron tube module](#item-9) ⭐️ 7/10
-10. [Language-Controlled 3D Avatar Runs Actions Locally](#item-10) ⭐️ 7/10
-11. [GMKtec Teases EVO-X3 With OCuLink, Wi-Fi 7, and Strix Halo](#item-11) ⭐️ 7/10
-12. [Qwen 3.6 27B KV Cache Quantization Benchmarks](#item-12) ⭐️ 7/10
-13. [Workflow Design Now Beats Model Choice](#item-13) ⭐️ 7/10
-14. [CodeGraph Adds Local Knowledge Graphs for AI Coding Agents](#item-14) ⭐️ 7/10
-15. [Headroom Cuts LLM Token Usage](#item-15) ⭐️ 7/10
-16. [Graphify Builds Queryable Knowledge Graphs for Coding Assistants](#item-16) ⭐️ 7/10
-17. [Python AI Agent for Multi-Source Topic Research](#item-17) ⭐️ 7/10
-18. [Anthropic Cybersecurity Skills Repo Gains Traction](#item-18) ⭐️ 7/10
-19. [CloakBrowser Adds Stealth Chromium for Bot Evasion](#item-19) ⭐️ 7/10
-20. [Teenage Engineering unveils APC–2 record cutter](#item-20) ⭐️ 6/10
+1. [AWS Launches ExtendDB for DynamoDB-Compatible Storage](#item-1) ⭐️ 8/10
+2. [CloakBrowser aims to evade bot detection in Chromium](#item-2) ⭐️ 8/10
+3. [llama.cpp adds Gemma 4 MTP support](#item-3) ⭐️ 7/10
+4. [Qwen 3.6 27B Posts a Low DeepSWE Score](#item-4) ⭐️ 7/10
+5. [Local code graph for AI coding agents](#item-5) ⭐️ 7/10
+6. [Headroom compresses LLM inputs to cut token usage](#item-6) ⭐️ 7/10
+7. [rtk: Zero-Dependency Rust Proxy for LLM Token Savings](#item-7) ⭐️ 7/10
+8. [oh-my-pi trends as a terminal AI coding agent](#item-8) ⭐️ 7/10
+9. [sem Adds Semantic Version Control on Git](#item-9) ⭐️ 7/10
+10. [Gemma 4 31B FP8 Matches Sonnet 4.6 Medium in Harness](#item-10) ⭐️ 6/10
+11. [Language-Controlled 3D Avatar Demo](#item-11) ⭐️ 6/10
+12. [Google Gemma 4 QAT Q4_0 Can Outsize Unsloth Q4_K_XL](#item-12) ⭐️ 6/10
+13. [Graphify turns project folders into queryable knowledge graphs](#item-13) ⭐️ 6/10
+14. [Goose Gains Attention as an Extensible Rust AI Agent](#item-14) ⭐️ 6/10
+15. [CopilotKit Gains Momentum in Agentic UI](#item-15) ⭐️ 6/10
+16. [Astrid: Rust OS for AI Agents](#item-16) ⭐️ 6/10
+17. [last30days-skill: cross-source research for AI agents](#item-17) ⭐️ 6/10
+18. [754 Cybersecurity Skills for AI Agents](#item-18) ⭐️ 6/10
+19. [GitHub Opens Copilot SDK for App Integration](#item-19) ⭐️ 6/10
+20. [OpenSquilla Promotes Token-Efficient AI Agents](#item-20) ⭐️ 6/10
 
 ---
 
 <a id="item-1"></a>
-## [New drug 'functionally cures' many hepatitis B virus infections](https://www.science.org/content/article/new-drug-functionally-cures-many-hepatitis-b-virus-infections?user_id=66c4bf745d78644b3aa57b08) ⭐️ 8/10
+## [AWS Launches ExtendDB for DynamoDB-Compatible Storage](https://www.infoq.com/news/2026/06/extenddb-dynamodb-adapter/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering) ⭐️ 8/10
 
-A Science article reports that a new drug can functionally cure many hepatitis B virus infections, raising hope for a major advance in HBV treatment.
+AWS announced ExtendDB, an open source adapter that implements the DynamoDB API and starts with PostgreSQL as its first storage backend. It allows existing AWS SDKs, CLI tools, and other DynamoDB-compatible clients to work without modification. This gives teams more flexibility in where they run DynamoDB-style workloads, which could reduce lock-in and expand deployment options beyond native DynamoDB. It is especially relevant for organizations exploring hybrid, on-premises, edge, or multi-backend database architectures. ExtendDB is described as a DynamoDB-compatible API adapter that uses a pluggable storage backend model rather than storing data in DynamoDB itself. AWS says it supports the DynamoDB wire protocol, and the project is positioned for local development, hybrid environments, and edge use cases.
 
-hackernews · gmays · Jun 8, 01:41 · [Discussion](https://news.ycombinator.com/item?id=48440463)
+rss · InfoQ AI ML Data Engineering · Jun 7, 06:25
 
-**Tags**: `#hepatitis B`, `#drug development`, `#clinical trials`, `#infectious disease`, `#biotech`
+**Background**: Amazon DynamoDB is AWS's serverless NoSQL database, known for low-latency performance and a managed operating model. Applications built on DynamoDB often rely on its API, SDKs, and specific data modeling patterns, so compatibility at the API level can preserve existing code and tooling. A pluggable backend means the same DynamoDB-facing application can potentially run on different storage systems while keeping the same client interface.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/database/introducing-extenddb-an-open-source-dynamodb-compatible-adapter-with-pluggable-storage-backends/">Introducing ExtendDB: An open source DynamoDB-compatible ...</a></li>
+<li><a href="https://extenddb.org/">ExtendDB — The DynamoDB API, everywhere you run code.</a></li>
+<li><a href="https://www.infoq.com/news/2026/06/extenddb-dynamodb-adapter/">ExtendDB: Open Source Amazon DynamoDB Compatible ... - InfoQ</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#DynamoDB`, `#databases`, `#storage backends`, `#AWS`, `#data engineering`
 
 ---
 
 <a id="item-2"></a>
-## [How's Linear so fast? A technical breakdown](https://performance.dev/how-is-linear-so-fast-a-technical-breakdown) ⭐️ 8/10
+## [CloakBrowser aims to evade bot detection in Chromium](https://github.com/CloakHQ/CloakBrowser) ⭐️ 8/10
 
-This article explains the technical design choices behind Linear’s perceived speed, likely focusing on client-side responsiveness, synchronization, and UI performance techniques.
+CloakHQ/CloakBrowser is a Python-based stealth Chromium project that claims to pass bot detection tests and serve as a drop-in Playwright replacement. The repo says it uses source-level fingerprint patches and reports 30/30 tests passed. If the claims hold up, the tool could make browser automation more resilient for scraping, testing, and agent workflows that face anti-bot defenses. It is notable because it targets the fingerprinting layer directly while keeping a Playwright-compatible interface, which lowers adoption friction for existing users. The project is written in Python and is described as a stealth Chromium fork with no special flags required. The available evidence is mostly the GitHub repository itself and a modest recent spike in stars, so the real-world robustness of the bypass claims is not independently verified here.
 
-hackernews · howToTestFE · Jun 7, 19:01 · [Discussion](https://news.ycombinator.com/item?id=48437609)
+ossinsight · CloakHQ · Jun 8, 07:19
 
-**Tags**: `#web performance`, `#local-first`, `#sync engines`, `#frontend architecture`, `#product engineering`
+**Background**: Playwright is a web automation library for driving Chromium, Firefox, and WebKit through one API, and it is commonly used for testing and scraping. Bot detection systems often look at browser fingerprints such as canvas, WebGL, audio, fonts, screen size, and automation signals to distinguish real users from automated clients. A tool like CloakBrowser tries to modify those signals so the browser appears less detectable.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://playwright.dev/">Playwright</a></li>
+<li><a href="https://github.com/microsoft/playwright">GitHub - microsoft/playwright: Playwright is a framework for ... BROWSER LIBRARY playwright · PyPI Use Playwright to automate and test in Microsoft Edge Web Scraping with Playwright: A Complete Guide Getting Started with Playwright | StickyMinds</a></li>
+<li><a href="https://github.com/CloakHQ/CloakBrowser">GitHub - CloakHQ/CloakBrowser: Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed. · GitHub</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#browser automation`, `#bot detection`, `#Playwright`, `#Chromium`, `#Python`
 
 ---
 
 <a id="item-3"></a>
-## [LLMs are eroding my software engineering career and I don't know what to do](https://human-in-the-loop.bearblog.dev/llms-are-eroding-my-software-engineering-career-and-i-dont-know-what-to-do/) ⭐️ 8/10
+## [llama.cpp adds Gemma 4 MTP support](https://www.reddit.com/r/LocalLLaMA/comments/1tzbcyp/llamacpp_gemma4_mtp_support_merged/) ⭐️ 7/10
 
-A Hacker News discussion explores whether LLMs are already undermining software engineering careers, weighing current limitations against rapidly improving capabilities.
+llama.cpp has merged support for Gemma 4 MTP, so the model can now run more smoothly within the project’s local inference stack. The post announces an upstream compatibility update rather than a new standalone release. This is important for people who use llama.cpp to run models locally, because upstream support usually makes deployment easier and reduces the need for custom patches. It also broadens the range of Gemma variants that the open-source local LLM ecosystem can support. The announcement does not include technical implementation notes, benchmarks, or caveats, so the only confirmed detail is that Gemma 4 MTP support has been merged upstream. No additional discussion or performance data was provided in the post.
 
-hackernews · poisonfountain · Jun 7, 12:49 · [Discussion](https://news.ycombinator.com/item?id=48434312)
+reddit · r/LocalLLaMA · /u/pinkyellowneon · Jun 7, 12:53
 
-**Tags**: `#LLMs`, `#software engineering`, `#AI careers`, `#developer productivity`, `#Hacker News`
+**Background**: llama.cpp is a widely used open-source inference project that helps people run large language models locally on consumer hardware. When a model gets upstream support, it usually means the project’s maintainers have added compatibility directly into the codebase, making it easier for users and downstream projects to adopt. Gemma is Google’s model family, and MTP here refers to a specific model variant or configuration mentioned in the announcement.
+
+**Tags**: `#llama.cpp`, `#Gemma`, `#local LLMs`, `#model support`, `#open-source AI`
 
 ---
 
 <a id="item-4"></a>
-## [AI CEOs from OpenAI, Anthropic, and Microsoft set aside their rivalry to warn Congress AI is making it too easy to design and create bioweapons](https://www.reddit.com/r/OpenAI/comments/1typovl/ai_ceos_from_openai_anthropic_and_microsoft_set/) ⭐️ 8/10
+## [Qwen 3.6 27B Posts a Low DeepSWE Score](https://www.reddit.com/r/LocalLLaMA/comments/1tzmq5y/qwen_36_27b_on_deepswe/) ⭐️ 7/10
 
-Leaders from OpenAI, Anthropic, and Microsoft reportedly urged Congress to take seriously the risk that AI can make bioweapon design and creation easier.
+A Reddit post reports that Qwen 3.6 27B scored 2% on DeepSWE, placing 18th out of 20 and above Haiku 4.5 and Minimax M2.7. The run took about 70 hours, with an average of 32 minutes per task and roughly 44,000 output tokens per task. DeepSWE is a long-horizon software engineering benchmark, so even a low score can reveal how well a model handles extended coding workflows rather than short prompts. The result is notable because Qwen 3.6 27B is discussed as a local model, and the post suggests it may be a more practical “poor man’s SOTA” option for local users even if it still trails frontier systems. The benchmark used Qwen 3.6 27B FP8 with a BF16 KV cache, 262k context, and vLLM, running on a single RTX 6000 Pro Blackwell on RunPod. The author used one rollout per task instead of the official four to save time, so the result is less rigorous than the full benchmark procedure and does not show a score range.
 
-reddit · r/OpenAI · /u/EchoOfOppenheimer · Jun 6, 18:59
+reddit · r/LocalLLaMA · /u/SteppenAxolotl · Jun 7, 20:13
 
-**Tags**: `#AI safety`, `#biosecurity`, `#AI governance`, `#policy`, `#OpenAI`
+**Background**: DeepSWE is designed to measure frontier coding agents on original, contamination-free software engineering tasks that span many repositories and languages. It focuses on long-horizon work, which is harder than answering isolated coding questions because models must maintain context, plan, and execute across extended interactions. Qwen 3.6 27B is an open-weight model from the Qwen line, and the post compares it to other models in the same local or benchmark context.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://deepswe.datacurve.ai/">DeepSWE measures frontier coding agents on original, long-horizon...</a></li>
+<li><a href="https://deepswe.lol/">DeepSWE — Long-Horizon Software Engineering Benchmark</a></li>
+<li><a href="https://docs.vllm.ai/en/latest/features/quantization/quantized_kvcache/">Quantized KV Cache - vLLM Documentation</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#LLM benchmarks`, `#Qwen`, `#Local LLMs`, `#Code models`, `#AI evaluation`
 
 ---
 
 <a id="item-5"></a>
-## [rtk-ai/rtk (+29⭐ past_24_hours)](https://github.com/rtk-ai/rtk) ⭐️ 8/10
+## [Local code graph for AI coding agents](https://github.com/colbymchenry/codegraph) ⭐️ 7/10
 
-rtk-ai/rtk is a Rust CLI proxy designed to reduce LLM token consumption by 60-90% for common development commands using a single zero-dependency binary.
+The GitHub project colbymchenry/codegraph is trending after gaining 87 stars in the past 24 hours. It is a TypeScript-based, pre-indexed local code knowledge graph designed for agents like Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent. If it works as described, the project could help AI coding tools understand large codebases with fewer tokens and fewer tool calls, which can reduce cost and latency. That makes it relevant for local-first and privacy-conscious workflows where teams want more context without sending everything to an external service. The repository emphasizes being 100% local, so the knowledge graph is built and used on the developer's machine rather than in the cloud. The current signal is mainly trending momentum and repository description; there is no additional technical validation, benchmark, or community discussion in the provided material.
 
-ossinsight · rtk-ai · Jun 8, 05:19
+ossinsight · colbymchenry · Jun 8, 07:19
 
-**Tags**: `#Rust`, `#LLM tooling`, `#developer tools`, `#CLI`, `#token optimization`
+**Background**: An AI coding agent is a tool that can inspect code, reason about changes, and take actions such as searching files or editing code. A knowledge graph organizes relationships between code entities so an agent can retrieve more relevant context instead of repeatedly scanning files. Pre-indexing means the repository is analyzed ahead of time, which can make lookups faster and more efficient during use.
+
+**Tags**: `#AI coding`, `#knowledge graph`, `#developer tools`, `#local-first`, `#TypeScript`
 
 ---
 
 <a id="item-6"></a>
-## [Building from zero after addiction, prison, and a felony](https://gavinray97.github.io/blog/building-from-zero-after-addiction-prison-felony) ⭐️ 7/10
+## [Headroom compresses LLM inputs to cut token usage](https://github.com/chopratejas/headroom) ⭐️ 7/10
 
-An autobiographical blog post describes rebuilding a tech career after addiction, prison, and a felony, sparking a large and thoughtful HN discussion about resilience, hiring, and second chances.
+chopratejas/headroom is a trending Python project that compresses logs, files, tool outputs, and RAG chunks before they reach an LLM. The repo claims this can reduce token usage by 60-95% while preserving the same answers, and it is offered as a library, proxy, and MCP server. Token usage directly affects latency and cost in LLM workflows, so a tool that reduces input size without changing results could have immediate practical value. It is especially relevant for RAG systems and agentic tools that repeatedly pass large context windows into models. The project targets multiple input types, including tool outputs, logs, files, and RAG chunks, which suggests it is designed for real production pipelines rather than only prompt text. The repository has seen recent traction with +83 stars in 24 hours, 7 new forks, 4 pushes, and 4 pull requests, indicating active interest and development.
 
-hackernews · gavinray · Jun 7, 18:33 · [Discussion](https://news.ycombinator.com/item?id=48437406)
+ossinsight · chopratejas · Jun 8, 07:19
 
-**Tags**: `#hacker-news`, `#career-recovery`, `#personal-story`, `#tech-industry`, `#hiring`
+**Background**: RAG, or retrieval-augmented generation, is a pattern where an LLM retrieves external information and uses it to produce more relevant answers. In practice, RAG can increase the amount of context sent to the model, which makes token management and cost optimization important. MCP, or Model Context Protocol, is a standard for connecting AI systems to external tools and data sources through a structured server interface.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Retrieval-augmented_generation">Retrieval-augmented generation - Wikipedia</a></li>
+<li><a href="https://modelcontextprotocol.io/docs/learn/server-concepts">Understanding MCP servers - Model Context Protocol</a></li>
+<li><a href="https://aws.amazon.com/what-is/retrieval-augmented-generation/">What is RAG? - Retrieval-Augmented Generation AI Explained - AWS</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#LLM tooling`, `#token compression`, `#Python`, `#RAG`, `#MCP`
 
 ---
 
 <a id="item-7"></a>
-## [DeepSeek V4 Pro beats GPT-5.5 Pro on precision](https://runtimewire.com/article/deepseek-v4-pro-beats-gpt-5-5-pro-on-precision) ⭐️ 7/10
+## [rtk: Zero-Dependency Rust Proxy for LLM Token Savings](https://github.com/rtk-ai/rtk) ⭐️ 7/10
 
-A Hacker News discussion claims DeepSeek V4 Pro beats GPT-5.5 Pro on precision, with commenters debating benchmark quality, cost, and real-world usefulness.
+rtk-ai/rtk is a Rust CLI proxy that claims to reduce LLM token usage by 60-90% on common developer commands. The project is packaged as a single binary with zero dependencies. If the token-savings claim holds up in practice, rtk could make LLM-assisted developer workflows cheaper and more responsive. That would matter for teams that rely on frequent command execution and want to reduce both API costs and latency. The repo currently shows Rust as the implementation language, with modest recent momentum of +29 stars in 24 hours, 2 forks, 1 push, and 1 pull request. The main technical claim is efficiency on common dev commands, but no benchmark methodology or limitations are provided in the supplied content.
 
-hackernews · yogthos · Jun 8, 01:39 · [Discussion](https://news.ycombinator.com/item?id=48440448)
+ossinsight · rtk-ai · Jun 8, 07:19
 
-**Tags**: `#AI models`, `#benchmarking`, `#large language models`, `#Hacker News`, `#cost-performance`
+**Background**: LLM tooling often wraps command-line workflows so a model can help generate, interpret, or act on developer commands. In these setups, token usage matters because it directly affects cost and can also influence response speed. A zero-dependency Rust CLI is typically attractive for distribution because it can be shipped as a small standalone binary.
+
+**Tags**: `#Rust`, `#LLM tooling`, `#CLI`, `#developer productivity`, `#token optimization`
 
 ---
 
 <a id="item-8"></a>
-## [Lathe Uses LLMs for Active Technical Learning](https://github.com/devenjarvis/lathe) ⭐️ 7/10
+## [oh-my-pi trends as a terminal AI coding agent](https://github.com/can1357/oh-my-pi) ⭐️ 7/10
 
-Lathe is a new Go-based CLI plus local web app that generates source-backed, hands-on tutorials for technical topics. Users can run commands like "/lathe build a 3D slicer in Erlang" and then study the tutorial in a browser while typing code themselves. The project reframes LLMs from automation tools into learning tools, which could help developers explore niche or under-documented topics more actively. It is especially relevant for people who want guided practice rather than having the model produce finished work for them. Lathe includes a table of contents that tracks scrolling, side notes, exercises, and source references, and it can also answer questions or use another LLM to verify that generated code compiles and runs. The author says it is not meant to replace human-written tutorials, and notes that it currently works best in a macOS setup using Claude Code.
+can1357/oh-my-pi is trending on GitHub after gaining 21 stars in the past 24 hours. The TypeScript project describes itself as a terminal-based AI coding agent with hash-anchored edits, tool harnessing, LSP, Python, browser support, subagents, and more. This reflects continued interest in AI-assisted developer tools that live directly in the terminal and integrate with real coding workflows. Features like LSP, browser support, and subagents suggest the project is aiming to do more than chat, potentially making it useful for hands-on code editing and automation. The repo is written in TypeScript and has seen 19 pushes and 4 pull requests, which suggests active iteration even though star growth is still modest. The standout claim is its hash-anchored edits, which implies edits are tracked against stable content anchors rather than only line numbers or freeform patches.
 
-hackernews · devenjarvis · Jun 7, 11:16 · [Discussion](https://news.ycombinator.com/item?id=48433756)
+ossinsight · can1357 · Jun 8, 07:19
 
-**Background**: LLM agent skills are add-ons or instructions that let coding tools like Claude Code, Cursor, or Codex perform more structured tasks. In this case, Lathe uses those agents to generate educational content rather than code output alone. The broader idea is similar to source-backed answers: the model should point back to evidence instead of speaking without grounding.
+**Background**: An AI coding agent is a tool that can help inspect code, make edits, and call external tools on a developer’s behalf. Terminal-based agents are popular because they fit naturally into existing command-line workflows and can be easier to script or automate. LSP, or Language Server Protocol, is commonly used by editors and tools to provide code intelligence such as completions, diagnostics, and navigation.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/shinpr/sub-agents-skills">GitHub - shinpr/sub-agents-skills: Cross-LLM sub-agent orchestration as an Agent Skills. Route tasks to Codex, Claude Code, Cursor, or Gemini from any compatible tool. · GitHub</a></li>
-<li><a href="https://github.com/alirezarezvani/claude-skills">GitHub - alirezarezvani/claude-skills: 337 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.</a></li>
-<li><a href="https://claude-plugins.dev/skills">Discover Agent Skills - Claude-Plugins.dev</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters generally liked the learning-first framing and suggested related ideas such as Socratic quiz agents that keep asking deeper questions until the learner reaches the answer themselves. Others said they already use similar CLI-plus-agent workflows for work, and one theme was that the most curious learners benefit most from LLMs because they want to understand what they are doing rather than just ship output.
-
-**Tags**: `#LLMs`, `#AI tools`, `#education`, `#developer tools`, `#learning`
+**Tags**: `#AI coding agents`, `#TypeScript`, `#developer tools`, `#terminal tools`, `#LLM integrations`
 
 ---
 
 <a id="item-9"></a>
-## [Inside an IBM 604 thyratron tube module](https://www.righto.com/2026/06/ibm-604-thyraton-tube-module.html) ⭐️ 7/10
+## [sem Adds Semantic Version Control on Git](https://github.com/Ataraxy-Labs/sem) ⭐️ 7/10
 
-A blog post by Ken Shirriff examines and powers up a thyratron tube module from the IBM 604 Electronic Calculating Punch, a 1948 vacuum-tube calculator. The experiment shows the module operating in a circuit and even driving a light bulb. The post offers a rare look at how early electronic calculators were built from replaceable modules, highlighting both the engineering and serviceability of mid-century IBM hardware. For computing-history readers and hardware engineers, it helps explain how vacuum-tube systems handled arithmetic before transistors became practical. The module uses a thyratron tube, which functions as a high-current switch, and the 604 employed several different module types. The post also connects this hardware to IBM's broader 600-line calculator family and notes that the machine used a plugboard for programming.
+Ataraxy-Labs/sem is a Rust-based tool that adds semantic version control on top of git, with entity-level diffs, blame, and impact analysis. It supports 26 languages through tree-sitter and is built with coding agents in mind. This matters because it moves code review and change analysis from line-based diffs toward entity-aware understanding, which can make reviews and automated reasoning more precise. That is especially relevant for developer tooling and coding agents that need to assess what changed and what could be affected. The repo description highlights support for entity-level diffs, blame, and impact analysis, but the public signal here is still modest, with only 20 stars gained in the past 24 hours and no discussion data provided. Its multi-language coverage comes from tree-sitter, an incremental parsing library used to build syntax trees for source code.
 
-hackernews · elpocko · Jun 7, 17:18 · [Discussion](https://news.ycombinator.com/item?id=48436819)
+ossinsight · Ataraxy-Labs · Jun 8, 07:19
 
-**Background**: The IBM 604 was an electronic calculating punch, part of IBM's 600-line business machines that automated arithmetic with punched cards and plugboard control. In this era, vacuum tubes were the main active components for electronic computation, and modular construction made repairs and replacement more practical. The IBM 604 sits in the transition period between largely electromechanical calculators and later transistorized machines.
+**Background**: Git normally tracks changes at the file and line level, which is useful but can miss the meaning of a change when code is moved, renamed, or refactored. Semantic version control tries to interpret code as higher-level entities such as functions or classes, so tools can compare and analyze changes more intelligently. Tree-sitter is a parser generator and incremental parsing library that helps tools understand code structure across many languages.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.righto.com/2026/06/ibm-604-thyraton-tube-module.html">Powering up a module from the IBM 604 : an electronic calculator ...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/IBM_604">IBM 604 - Wikipedia</a></li>
-<li><a href="https://thisdayintechhistory.com/10/07/the-first-transistor-calculator/">The First Transistor Calculator - This Day in Tech History</a></li>
+<li><a href="https://github.com/ataraxy-labs/sem">GitHub - Ataraxy-Labs/sem: Semantic version control => entity-level diffs, blame, and impact analysis on top of git. 26 languages via tree-sitter. Built for coding agents. · GitHub</a></li>
+<li><a href="https://github.com/tree-sitter/tree-sitter">GitHub - tree-sitter/tree-sitter: An incremental parsing system for programming tools · GitHub</a></li>
+<li><a href="https://tree-sitter.github.io/tree-sitter/using-parsers/">Using Parsers - Tree-sitter</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters were enthusiastic and technically engaged, with some sharing historical context about IBM's 600-line machines and the evolution from mechanical to electronic calculators. Others focused on the module design and repairability, calling the tube-and-support-components-in-one-module approach clever and noting the historical value of surviving hardware.
-
-**Tags**: `#computing history`, `#vacuum tubes`, `#hardware archaeology`, `#IBM`, `#electronics`
+**Tags**: `#Rust`, `#developer-tools`, `#version-control`, `#tree-sitter`, `#code-analysis`
 
 ---
 
 <a id="item-10"></a>
-## [Language-Controlled 3D Avatar Runs Actions Locally](https://www.reddit.com/r/LocalLLaMA/comments/1tzgn87/control_a_3d_avatar_with_language_instead_of/) ⭐️ 7/10
+## [Gemma 4 31B FP8 Matches Sonnet 4.6 Medium in Harness](https://www.reddit.com/r/LocalLLaMA/comments/1tzw207/gemma4_31b_fp8_keeping_up_with_sonnet_46_medium/) ⭐️ 6/10
 
-A developer released a browser-based 3D avatar that can be controlled with plain English commands instead of buttons. The system compiles each sentence into an executable action program with sequences, loops, holds, and parallel tracks, and it runs locally in the browser. This is a concrete example of language-to-action interfaces, where an LLM-style system can turn natural language into structured behavior rather than just text. It could be useful for games, avatars, and other embodied interfaces that need flexible, expressive control beyond fixed UI buttons. The avatar uses a compiled program behind the scenes, and the creator says the exact program can be inspected through a debug panel by adding `?dbg=1` to the URL. The runtime is described as local and offline after the initial download, and the author says the underlying code is released in the `programasweights` repository.
+A Reddit user reported that Gemma4_31b_fp8 kept up with Sonnet_4.6_medium in their own harness. The comparison covered graph traversal with Cypher queries, entity extraction, agentic tool use, Python code writing, and summarization tasks. If the result holds up beyond a single harness, it suggests a smaller local model in FP8 can compete with a much stronger hosted model on practical workflows. That could matter for people trying to run capable LLMs locally with lower cost and more control. The report is anecdotal and based on one user's harness rather than a standardized benchmark, so it should be treated as a single data point. The post specifically mentions Gemma and Qwen in FP8, suggesting the user is comparing local quantized models on tasks that mix retrieval, tools, and generation.
 
-reddit · r/LocalLLaMA · /u/yuntiandeng · Jun 7, 16:25
+reddit · r/LocalLLaMA · /u/knob-0u812 · Jun 8, 03:06
 
-**Background**: A 3D avatar is a rendered character model that can perform animations such as walking, jumping, and waving. In many systems, those motions are triggered by prebuilt buttons, scripts, or animation state machines that switch between predefined states. This project instead uses plain language as the input, then compiles it into a small action program that can combine actions in ways a button panel would not easily support. The mention of loops and parallel tracks suggests it is trying to express richer animation logic than a simple one-command-at-a-time controller.
+**Background**: Gemma is a family of open models, and 31B refers to a roughly 31-billion-parameter model size. FP8 is an 8-bit floating-point format used to reduce memory and speed up inference, which can make larger models more practical to run on local hardware. Harnesses like the one described here are custom evaluation setups that test how models perform on specific tasks such as retrieval, coding, and agentic tool use.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://medium.com/@andbubnov/compilation-for-llms-why-a-language-for-models-needs-native-code-053793f8c1a7">Compilation for LLMs: Why a Language for Models Needs Native Code</a></li>
-<li><a href="https://docs.unity3d.com/Manual/AnimationStateMachines.html">Unity - Manual: Animation state machine</a></li>
-<li><a href="https://www.gamedev.net/tutorials/programming/general-and-gameplay-programming/from-user-input-to-animations-using-state-machines-r4155/">From User Input to Animations Using State Machines - General and Gameplay Programming - Tutorials - GameDev.net</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#LLM interfaces`, `#3D avatars`, `#language-to-code`, `#agentic control`, `#browser-based AI`
+**Tags**: `#LLM benchmarking`, `#Gemma`, `#FP8`, `#Local LLMs`, `#agentic AI`
 
 ---
 
 <a id="item-11"></a>
-## [GMKtec Teases EVO-X3 With OCuLink, Wi-Fi 7, and Strix Halo](https://www.reddit.com/r/LocalLLaMA/comments/1tzgafl/gmktec_crams_oculink_wifi_7_and_dual_pcie_40_into/) ⭐️ 7/10
+## [Language-Controlled 3D Avatar Demo](https://www.reddit.com/r/LocalLLaMA/comments/1tzgn87/control_a_3d_avatar_with_language_instead_of/) ⭐️ 6/10
 
-GMKtec is teasing an EVO-X3 mini PC with upgraded connectivity, including OCuLink, Wi‑Fi 7, and dual PCIe 4.0. A later variant is also expected to use the Ryzen AI MAX+ 495 with up to 192GB of memory, making it one of the most ambitious compact systems hinted at so far. For local LLM and AI PC users, this points to a mini PC that could pair strong CPU/GPU-class compute potential with expansion-friendly I/O. Features like OCuLink and large memory capacity matter because they can make compact machines more practical for external GPUs and memory-hungry workloads. The post appears to be an early leak or teaser, so pricing and full specifications are not yet available. The mention of OCuLink is notable because it can provide a direct PCIe-style connection for eGPU or other PCIe devices, while Wi‑Fi 7 and dual PCIe 4.0 suggest a more modern high-bandwidth platform.
+A developer built a 3D character that can be controlled with plain English instructions instead of fixed buttons or scripts. The demo uses ProgramAsWeights to compile a sentence into a local action program that runs in the browser, including sequences like "wave while walking, then jump a couple times." This shows a practical direction for AI agents and interactive 3D systems: users can describe intent in natural language, and the system turns it into executable behavior. If the approach becomes robust, it could make games, avatars, and other browser-based experiences more flexible and easier to author. The runtime is local: the first call downloads a tiny program and base model, then it can run offline without API keys or internet access after setup. The system also includes a debug mode via `?dbg=1` that reveals the exact action program written for each sentence, and the author says the inference/runtime code is already released on GitHub.
 
-reddit · r/LocalLLaMA · /u/mindwip · Jun 7, 16:12
+reddit · r/LocalLLaMA · /u/yuntiandeng · Jun 7, 16:25
 
-**Background**: OCuLink is a connector that mini PCs sometimes use to expose a direct PCIe link, which can be useful for eGPUs or other high-speed expansion devices. PCIe 4.0 is the high-speed interconnect used for components like SSDs and adapters, so “dual PCIe 4.0” implies more than one such fast lane or port. Wi‑Fi 7 is the newest wireless standard mentioned here, and it is associated with higher speeds and lower latency than earlier Wi‑Fi generations. The Ryzen AI MAX+ 495 name also suggests a high-end AMD platform aimed at demanding compact-compute use cases.
+**Background**: ProgramAsWeights is a tool that lets people define functions in English and compile them into tiny neural programs that run locally on their own machine. In this demo, the avatar's "director" is such a compiled program, which turns natural-language requests into action logic such as loops, holds, and parallel tracks. Browser-based local inference is attractive because it lowers friction and keeps computation on-device, which can improve privacy and reduce dependency on cloud services.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.hardware-corner.net/guides/mini-pc-with-oculink/">Best Mini PC with OCulink Port for eGPU | Hardware Corner</a></li>
-<li><a href="https://www.cisco.com/site/us/en/learn/topics/networking/what-is-wi-fi-7.html">What Is Wi-Fi 7? Explained - Cisco</a></li>
-<li><a href="https://www.intel.com/content/www/us/en/gaming/resources/what-is-pcie-4-and-why-does-it-matter.html">What Are PCIe 4.0 and 5.0? - Intel</a></li>
+<li><a href="https://programasweights.readthedocs.io/">ProgramAsWeights Documentation</a></li>
+<li><a href="https://pypi.org/project/programasweights/">Compile natural language specifications into neural programs that run...</a></li>
+<li><a href="https://programasweights.com/hub">PAW — Define functions in English , run them locally</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#mini PC`, `#Ryzen AI`, `#local LLM`, `#OCuLink`, `#Wi-Fi 7`
+**Tags**: `#AI agents`, `#3D avatars`, `#natural language control`, `#browser-based ML`, `#local inference`
 
 ---
 
 <a id="item-12"></a>
-## [Qwen 3.6 27B KV Cache Quantization Benchmarks](https://www.reddit.com/r/LocalLLaMA/comments/1tza4ji/qwen_36_27b_kv_cache_quant_benchmarks_75_pairs/) ⭐️ 7/10
+## [Google Gemma 4 QAT Q4_0 Can Outsize Unsloth Q4_K_XL](https://www.reddit.com/r/LocalLLaMA/comments/1tzxmm8/qats_q4_0_from_google_have_more_precision_than_q4/) ⭐️ 6/10
 
-A Reddit post published benchmark results for KV cache quantization on Qwen 3.6 27B, comparing q8, q6, q5, q4, KVarN, TurboQuant, and TCQ across 75 pairs. The author says the detailed analysis is available in two linked articles and that BeeLlama.cpp was used as the inference engine because it supports additional quantization types such as KVarN, q6_0, TurboQuant, and TCQ. KV cache quantization is a practical lever for reducing memory use and improving long-context inference, which matters for deploying larger models efficiently. Benchmarks like this help practitioners judge the trade-offs between accuracy, throughput, and capacity across competing quantization schemes. The post focuses on long-context inference, where the KV cache becomes a major memory bottleneck as sequence length grows. It also highlights that some newer methods, like TurboQuant and TCQ, are available in the BeeLlama.cpp fork used for the tests, which suggests the benchmark is comparing multiple recent approaches under the same engine.
+A Reddit user compared Google’s Gemma 4 QAT GGUF releases with Unsloth’s Gemma 4 QAT GGUF variants and found cases where Google’s Q4_0 file is larger than Unsloth’s Q4_K_XL file. The post includes tensor breakdowns for models such as E4B, E2B, and 12B and suggests that the Google files may preserve more precision in some parts of the model. For people running local LLMs, quantization format affects both disk usage and model quality, so a “smaller” label does not always mean a smaller actual file. This comparison highlights how GGUF naming and mixed-precision tensor layouts can influence real-world tradeoffs for Gemma 4 users. The post shows Google’s E4B Q4_0 GGUF at 5.15 GB versus Unsloth’s Q4_K_XL at 4.22 GB, and notes similar patterns across other sizes. The author also points out extra tensors such as `per_layer_model_proj.weight`, `per_layer_proj_norm.weight`, and `per_layer_token_embd.weight`, but the exact reason for the layout difference is still unresolved.
 
-reddit · r/LocalLLaMA · /u/Anbeeld · Jun 7, 11:54
+reddit · r/LocalLLaMA · /u/alex20_202020 · Jun 8, 04:26
 
-**Background**: In transformer-based LLMs, the KV cache stores attention keys and values from previous tokens so the model can generate new tokens efficiently. For long contexts, this cache can dominate memory usage, so researchers explore quantizing it to lower precision such as q8, q6, q5, or q4. Recent work like KVQuant and KVarN studies how to preserve accuracy while compressing the cache, often targeting inference settings rather than training.
+**Background**: GGUF is a file format commonly used for running LLMs locally, and its quantization labels describe how model weights are compressed to reduce size and speed up inference. In general, lower-bit quantization saves space but can reduce accuracy, while more advanced schemes may keep some layers at higher precision to preserve quality. QAT, or quantization-aware training, trains a model with quantization effects in mind so it can tolerate compression better than simple post-training quantization.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/huawei-csl/KVarN">GitHub - huawei-csl/KVarN: KVarN is a native vLLM KV-cache quantization ...</a></li>
-<li><a href="https://www.stat.berkeley.edu/~mmahoney/pubs/neurips-2024-kvquant.pdf">Towards 10 Million Context Length LLM Inference with KV ...</a></li>
-<li><a href="https://github.com/SqueezeAILab/KVQuant">GitHub - SqueezeAILab/KVQuant: [NeurIPS 2024] KVQuant: Towards 10 Million Context Length LLM Inference with KV Cache Quantization · GitHub</a></li>
+<li><a href="https://insiderllm.com/guides/llm-quantization-explained/">Quantization Explained: What It Means for Local AI | InsiderLLM</a></li>
+<li><a href="https://pytorch.org/blog/quantization-aware-training/">Quantization-Aware Training for Large Language Models with ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#KV cache quantization`, `#LLM inference`, `#benchmarking`, `#long context`, `#Qwen`
+**Tags**: `#quantization`, `#LLM models`, `#GGUF`, `#Gemma 4`, `#model compression`
 
 ---
 
 <a id="item-13"></a>
-## [Workflow Design Now Beats Model Choice](https://www.reddit.com/r/OpenAI/comments/1tzx8ae/i_think_were_entering_an_era_where_workflow/) ⭐️ 7/10
+## [Graphify turns project folders into queryable knowledge graphs](https://github.com/safishamsi/graphify) ⭐️ 6/10
 
-A Reddit post argues that AI teams are spending too much time comparing frontier models and not enough time designing the workflow around them. The author says clear inputs, clear outputs, review steps, and tight feedback loops often matter more than picking the “best” model. This reflects a growing shift in AI product development: as models become more commoditized, systems and process design can become the main source of quality differences. It matters for teams building LLM applications because the same model can produce very different results depending on how the work is structured. The post emphasizes practical implementation patterns such as defined review stages and feedback loops rather than treating the model as a black box. The broader idea aligns with published guidance on feedback-driven optimization, human-in-the-loop evaluation, and prompt engineering for structured outputs.
+safishamsi/graphify is trending on GitHub after gaining 63 stars in 24 hours. It is a Python-based AI coding assistant skill that can turn folders containing code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. This matters because it gives AI coding assistants a structured way to understand mixed-format project context instead of relying only on raw files and prompts. For developers, that could make codebase exploration, dependency tracing, and cross-document lookup faster and more reliable. The project is positioned to work with assistants such as Claude Code, Codex, OpenCode, Cursor, and Gemini CLI. The repo description emphasizes that app code, database schema, and infrastructure can all live in one graph, which suggests a focus on multi-artifact project analysis rather than code alone.
 
-reddit · r/OpenAI · /u/Bladerunner_7_ · Jun 8, 04:05
+ossinsight · safishamsi · Jun 8, 07:19
 
-**Background**: LLM applications are often built as systems, not just prompts: a model receives inputs, produces outputs, and may be checked, edited, or scored before the result reaches a user. Prompt engineering focuses on shaping the model’s behavior through well-designed instructions, while feedback loops use human or automated review to improve future outputs. As teams move from demos to production, workflow design becomes a major part of reliability and quality.
+**Background**: A knowledge graph represents entities and relationships in a way that makes connections easier to query than with plain folders or text search. In software engineering, a codebase knowledge graph is used to model files, functions, schemas, and other artifacts so tools can answer questions about how a project fits together. Graphify extends that idea to multimodal project content, which is why it highlights docs, papers, images, and videos as inputs.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://medium.com/@aartijha96/feedback-driven-ai-the-key-to-building-better-llms-627518e364cc">Building Better LLMs: A Guide to Feedback-Driven Optimisation</a></li>
-<li><a href="https://drcarmenmartinez.substack.com/p/designing-feedback-loops-for-llm">Designing Feedback Loops for LLM Systems: Evaluation, Rubrics and Human ...</a></li>
-<li><a href="https://www.braintrust.dev/articles/human-in-the-loop-evals-for-llm-apps">How to run human-in-the-loop evals for LLM apps</a></li>
+<li><a href="https://graphify.net/">Graphify — Knowledge Graph Skill for AI Coding Assistants</a></li>
+<li><a href="https://understand-anything.com/">Understand Anything — Graphs that teach the codebase</a></li>
+<li><a href="https://neo4j.com/blog/developer/codebase-knowledge-graph/">Codebase Knowledge Graph : Code Analysis with Graphs</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM workflows`, `#AI product design`, `#prompt engineering`, `#systems design`, `#model selection`
+**Tags**: `#knowledge graphs`, `#AI coding tools`, `#developer productivity`, `#Python`, `#codebase analysis`
 
 ---
 
 <a id="item-14"></a>
-## [CodeGraph Adds Local Knowledge Graphs for AI Coding Agents](https://github.com/colbymchenry/codegraph) ⭐️ 7/10
+## [Goose Gains Attention as an Extensible Rust AI Agent](https://github.com/aaif-goose/goose) ⭐️ 6/10
 
-colbymchenry/codegraph is a TypeScript project that provides a pre-indexed local code knowledge graph for agents like Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent. The repo has recently gained 87 stars in 24 hours, reflecting growing attention around its token-saving workflow. By letting agents query a local index before reading source files, CodeGraph aims to reduce redundant token usage and tool calls during code navigation and editing. That can make AI coding assistants faster and cheaper to use, especially on larger codebases where repeated grep/read loops are expensive. The project is described as 100% local and is designed for intent-based access patterns such as exploration, symbol lookup, caller/callee traversal, impact analysis, and fetching the full source for a node. The main caveat is that it is still an early-stage developer tool, so its real-world benefit will depend on how well agents integrate it into their workflows.
+The GitHub repository aaif-goose/goose gained 48 stars in the past 24 hours, drawing attention as an open-source AI agent written in Rust. The project describes Goose as an extensible agent that can install, execute, edit, and test code with any LLM. This points to continued interest in AI coding agents that do more than suggest code and instead take actions across development workflows. Its Rust implementation and extensibility may appeal to developers building local tools, agent runtimes, or MCP-enabled integrations. The repo is associated with Model Context Protocol (MCP) client and coding-agent collections, which suggests it is designed to connect an AI agent to external tools and contexts. The available signal is mainly a short-term star bump, with no accompanying fork growth or deeper community discussion in the provided data.
 
-ossinsight · colbymchenry · Jun 8, 05:19
+ossinsight · aaif-goose · Jun 8, 07:19
 
-**Background**: AI coding agents often inspect repositories by repeatedly searching and reading files, which can waste tokens and slow down tasks. A code knowledge graph organizes symbols, relationships, and source locations so the agent can answer structural questions more directly. This approach overlaps with broader GraphRAG and code-search tooling trends that try to make LLM-based assistants more efficient on large codebases.
+**Background**: MCP, or Model Context Protocol, is a standard for connecting LLMs and host applications to external servers and tools. In MCP terminology, a client is the component inside a host application that communicates with a specific MCP server. AI coding agents are systems that can go beyond text generation and perform tasks such as editing files, running commands, and testing code.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/colbymchenry/codegraph">GitHub - colbymchenry/codegraph: Pre-indexed code knowledge graph for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local</a></li>
-<li><a href="https://www.grahambrooks.com/post/building-a-code-knowledge-graph-for-ai-agents/">Building a Code Knowledge Graph for Ai Agents | Coding Architect</a></li>
-<li><a href="https://github.com/topics/coding-assistants">coding - assistants · GitHub Topics · GitHub</a></li>
+<li><a href="https://modelcontextprotocol.io/docs/learn/client-concepts">Understanding MCP clients - Model Context Protocol</a></li>
+<li><a href="https://github.com/aaif-goose/goose">GitHub - aaif-goose/goose: an open source, extensible AI agent that...</a></li>
+<li><a href="https://github.com/modelcontextprotocol">Model Context Protocol - GitHub</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#TypeScript`, `#code search`, `#AI agents`, `#knowledge graph`, `#developer tools`
+**Tags**: `#AI agents`, `#Rust`, `#MCP`, `#developer tools`, `#coding assistants`
 
 ---
 
 <a id="item-15"></a>
-## [Headroom Cuts LLM Token Usage](https://github.com/chopratejas/headroom) ⭐️ 7/10
+## [CopilotKit Gains Momentum in Agentic UI](https://github.com/CopilotKit/CopilotKit) ⭐️ 6/10
 
-Headroom, a Python project by chopratejas, is trending on GitHub with +83 stars in the past 24 hours. It provides a library, proxy, and MCP server that compress tool outputs, logs, files, and RAG chunks before they reach an LLM, claiming 60% to 95% fewer tokens with the same answers. Token usage is a major cost and latency driver for LLM applications, so even modest savings can have outsized impact at scale. If Headroom works as advertised, it could help teams building agents, RAG systems, and other LLM workflows cut inference spend without changing application logic. The project focuses on compressing repetitive or boilerplate-heavy context before model ingestion, which is especially relevant for tool calls, logs, and retrieval chunks. The search results also describe a proxy workflow with zero code changes, an MCP server interface, and cache-related optimizations such as stabilizing message prefixes for provider KV cache hits.
+CopilotKit/CopilotKit gained 44 stars in the past 24 hours, along with 4 forks, 11 pushes, and 2 pull requests. The TypeScript project describes itself as a frontend stack for agents and generative UI, with support for React and Angular and a focus on the AG-UI Protocol. This matters because agentic UI tools are becoming a key layer between AI backends and end-user applications, and CopilotKit is positioning itself as infrastructure for that layer. If adopted, it could help teams build richer human-in-the-loop workflows, dynamic interfaces, and agent-driven experiences without wiring everything from scratch. The repo emphasizes generative UI, meaning agents can dynamically generate or update interface components at runtime based on user intent and agent state. Its AG-UI Protocol framing is notable because AG-UI is described as an open, lightweight, event-based protocol for connecting AI agents to user-facing applications.
 
-ossinsight · chopratejas · Jun 8, 05:19
+ossinsight · CopilotKit · Jun 8, 07:19
 
-**Background**: LLMs consume tokens for both inputs and outputs, so long tool responses, verbose logs, and large RAG chunks can quickly increase cost. RAG, or retrieval-augmented generation, feeds retrieved documents into the model so it can answer with more context, but that also makes prompt size a performance concern. MCP, or Model Context Protocol, is a way for agents and tools to expose structured context to model clients.
+**Background**: CopilotKit is aimed at frontend developers who want to add AI capabilities such as chat, generative UI, and human-in-the-loop workflows to web apps. React and Angular support suggests it is trying to fit into common frontend stacks rather than requiring a custom client architecture. AG-UI is the protocol layer meant to standardize how an agent communicates with a user interface and real-time user context.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/chopratejas/headroom">GitHub - chopratejas/headroom: Compress tool outputs, logs ...</a></li>
-<li><a href="https://headroomlabs.ai/">Headroom - Context Optimization for LLM Tooling & Agents</a></li>
-<li><a href="https://pypi.org/project/headroom-ai/">headroom-ai · PyPI</a></li>
+<li><a href="https://docs.ag-ui.com/introduction">AG-UI Overview - Agent User Interaction Protocol</a></li>
+<li><a href="https://github.com/ag-ui-protocol/ag-ui/">AG-UI: The Agent-User Interaction Protocol - GitHub</a></li>
+<li><a href="https://github.com/CopilotKit/CopilotKit">CopilotKit/CopilotKit: The Frontend Stack for Agents & Generative ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM efficiency`, `#token compression`, `#Python`, `#RAG`, `#AI tooling`
+**Tags**: `#agentic-ui`, `#frontend`, `#typescript`, `#react`, `#generative-ai`
 
 ---
 
 <a id="item-16"></a>
-## [Graphify Builds Queryable Knowledge Graphs for Coding Assistants](https://github.com/safishamsi/graphify) ⭐️ 7/10
+## [Astrid: Rust OS for AI Agents](https://github.com/unicity-astrid/astrid) ⭐️ 6/10
 
-Graphify, a Python project by safishamsi, is trending on GitHub after gaining 63 stars in the past 24 hours. It turns mixed project assets such as code, SQL schemas, R scripts, shell scripts, docs, papers, images, and videos into a queryable knowledge graph for AI coding assistants. This matters because AI coding assistants often struggle to reason across large, messy, multi-format codebases. By adding a graph layer that unifies code, documentation, and infrastructure, Graphify could improve context retrieval for tools like Claude Code, Codex, Cursor, and Gemini CLI. The project is positioned as an open-source Python skill for AI coding assistants, and its own materials claim it can reduce query tokens substantially when using a knowledge-graph layer. The main caveat is that it is an emerging tool rather than a proven standard, so its real-world value will depend on how well it handles different project types and multimodal assets.
+The GitHub repository unicity-astrid/astrid is trending after gaining 41 stars in the past 24 hours. It describes Astrid as "an operating system for AI agents" and is implemented in Rust. An AI-agent operating system suggests a lower-level runtime layer for coordinating agent execution, rather than just another chatbot or wrapper. If the project matures, it could be relevant to developers building autonomous agent workflows that need resource control, isolation, and observability. The repository activity is still early-stage: there were 17 pushes in the past 24 hours, but no forks were recorded in that period. The available description is minimal, so the project’s exact architecture and feature set cannot be confirmed from the item alone.
 
-ossinsight · safishamsi · Jun 8, 05:19
+ossinsight · unicity-astrid · Jun 8, 07:19
 
-**Background**: A knowledge graph stores entities and their relationships in a structured form, which can help systems retrieve relevant context more effectively than plain text search. In the AI coding-assistant setting, this can make it easier to answer questions about code flow, dependencies, schemas, and documentation spread across a repository. Graphify follows a broader trend of using graph-based retrieval to support RAG and coding agents on large codebases.
+**Background**: In AI systems discussions, an "operating system" often refers to a runtime or control layer that manages how agents execute tasks, coordinate with tools, and use shared resources. Web search results also frame this idea as a shift from chatbots toward agent runtimes that focus on decision quality, task completion, and execution over time. Rust is often chosen for infrastructure projects because it can offer strong performance and safety properties.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://graphify.net/knowledge-graph-for-ai-coding-assistants.html">Knowledge Graphs for AI Coding Assistants — Graphify</a></li>
-<li><a href="https://graphify.net/">Graphify — Knowledge Graph Skill for AI Coding Assistants</a></li>
-<li><a href="https://medium.com/@ziche94/building-knowledge-graph-over-a-codebase-for-llm-245686917f96">Building Knowledge Graph over a Codebase for LLM | by Zimin Chen</a></li>
+<li><a href="https://github.com/unicity-astrid/astrid">GitHub - unicity-astrid/astrid: An operating system for AI ...</a></li>
+<li><a href="https://viveky259259.medium.com/harness-in-ai-systems-the-operating-system-for-the-agent-era-b339632fce0d">Harness in AI Systems — The Operating System for the Agent Era</a></li>
+<li><a href="https://bldbot.site/en/guides/ai-agent-vs-chatbot">AI Agent vs Chatbot: What's the Difference? | BldBot</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#knowledge graph`, `#AI coding assistant`, `#developer tools`, `#Python`, `#code analysis`
+**Tags**: `#Rust`, `#AI agents`, `#operating systems`, `#developer tools`, `#open source`
 
 ---
 
 <a id="item-17"></a>
-## [Python AI Agent for Multi-Source Topic Research](https://github.com/mvanhorn/last30days-skill) ⭐️ 7/10
+## [last30days-skill: cross-source research for AI agents](https://github.com/mvanhorn/last30days-skill) ⭐️ 6/10
 
-The GitHub repository mvanhorn/last30days-skill is trending, gaining 34 stars in the past 24 hours. It is a Python-based AI agent skill that researches topics across Reddit, X, YouTube, Hacker News, Polymarket, and the web, then synthesizes a grounded summary. This is useful for anyone who needs fast, cross-platform research without manually checking multiple communities and sources. Its rise suggests continued interest in AI tooling that can collect evidence, compare viewpoints, and produce summaries that stay grounded in source material. The repo is described as an AI agent skill, which in this context means a packaged set of instructions that an agent can use to follow a research workflow. Its output is meant to be grounded, meaning the summary should stay anchored to the gathered sources rather than relying only on model intuition; however, the item provided does not show deeper technical benchmarks or limitations.
+The GitHub repo mvanhorn/last30days-skill is trending after gaining 34 stars in the past 24 hours. It is a Python-based AI agent skill designed to research topics across Reddit, X, YouTube, Hacker News, Polymarket, and the web, then produce a grounded summary. This is useful because it targets a common weakness in LLM workflows: pulling together evidence from multiple sources while keeping the final answer tied to verifiable information. If adopted, it could help researchers, analysts, and agent builders automate cross-platform discovery and synthesis with less manual effort. The project is described as an AI agent skill, which in this context means a standardized capability package that gives an agent a specialized workflow or expertise. The “grounded summary” framing implies the output is intended to be tied to source evidence rather than generated purely from model memory, although the repo signal here is still modest with no forks reported.
 
-ossinsight · mvanhorn · Jun 8, 05:19
+ossinsight · mvanhorn · Jun 8, 07:19
 
-**Background**: An AI agent is a system that can use tools, gather information, and carry out multi-step tasks with limited human intervention. In Python projects, a “skill” often refers to a reusable instruction set or workflow that teaches the agent how to handle a specific job. Polymarket is a prediction market, so including it alongside Reddit, X, YouTube, HN, and the web gives the agent a broader mix of sentiment, discussion, and signal sources. A grounded summary is intended to reduce hallucinations by tying the final answer to evidence from those sources.
+**Background**: AI agent skills are a lightweight way to extend an agent with a defined task pattern, often packaged as instructions and related files that the agent can load when needed. In this case, the skill focuses on research and synthesis across several public information sources, which is a common use case for agentic AI systems that do more than chat and instead act on a user’s behalf. Grounding is important in search and synthesis because it helps connect answers to real sources, reducing the chance of plausible but unsupported claims.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.agensi.io/learn/best-skills-for-python-developers-2026">Best Skills for Python Developers — AI Agent Skills (2026)</a></li>
-<li><a href="https://polymarket.com/">Polymarket | The World's Largest Prediction Market</a></li>
+<li><a href="https://agentskills.io/">A standardized way to give AI agents new capabilities and expertise.</a></li>
+<li><a href="https://docs.cloud.google.com/generative-ai-app-builder/docs/check-grounding">Check grounding with RAG | Agent Search - Google Cloud</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI agents`, `#information synthesis`, `#Python`, `#web research`, `#trending GitHub`
+**Tags**: `#AI agents`, `#search and synthesis`, `#Python`, `#information retrieval`, `#LLM tools`
 
 ---
 
 <a id="item-18"></a>
-## [Anthropic Cybersecurity Skills Repo Gains Traction](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ⭐️ 7/10
+## [754 Cybersecurity Skills for AI Agents](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ⭐️ 6/10
 
-The GitHub repository mukul975/Anthropic-Cybersecurity-Skills adds 754 structured cybersecurity skills for AI agents. It maps those skills across five frameworks—MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, and NIST AI RMF—and is designed to work with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI, and 20+ other platforms. This makes it easier to standardize how AI agents handle cybersecurity tasks across different tools and security frameworks. For teams building agentic coding or security workflows, a shared skill map can reduce integration effort and help align AI behavior with recognized industry controls. The project is released under Apache 2.0 and describes coverage across 26 security domains. The repo’s value is primarily in packaging and interoperability rather than a new model or algorithm, so its usefulness depends on how well those structured skills are adopted by downstream agents and platforms.
+The GitHub repository mukul975/Anthropic-Cybersecurity-Skills is trending with 25 stars gained in the past 24 hours. It presents 754 structured cybersecurity skills for AI agents, mapped to MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, and NIST AI RMF. This is useful for teams building AI agents that need security-oriented workflows, because it gives them a standardized skills layer instead of ad hoc prompts. Its broad framework mapping also makes it easier to align AI-assisted security work with established industry taxonomies and governance models. The repository says it follows the agentskills.io standard and is designed to work across 20+ platforms, including Claude Code, GitHub Copilot, Codex CLI, Cursor, and Gemini CLI. It is released under Apache 2.0 and organized across 26 security domains, but the post does not provide independent validation of the skill quality or real-world effectiveness.
 
-ossinsight · mukul975 · Jun 8, 05:19
+ossinsight · mukul975 · Jun 8, 07:19
 
-**Background**: MITRE ATT&CK is a widely used knowledge base of adversary tactics and techniques, while MITRE ATLAS applies a similar idea to attacks on AI-enabled systems. NIST CSF 2.0 and NIST AI RMF are frameworks used to organize cybersecurity and AI risk management practices, and D3FEND focuses on defensive techniques. A repository that maps skills to these frameworks is trying to give AI agents a common security vocabulary and a more portable way to reason about tasks.
+**Background**: MITRE ATT&CK is a widely used knowledge base of adversary tactics and techniques, while NIST CSF 2.0 is a cybersecurity framework used to structure risk management and security programs. MITRE ATLAS focuses on attacks against AI-enabled systems, D3FEND catalogs defensive techniques, and NIST AI RMF addresses risk management for AI systems. In this context, mapping skills to multiple frameworks helps connect agent instructions to established security language.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://attack.mitre.org/">MITRE ATT&CK®</a></li>
-<li><a href="https://www.nist.gov/cyberframework">Cybersecurity Framework | NIST</a></li>
-<li><a href="https://csrc.nist.gov/csrc/media/Presentations/2025/mitre-atlas/TuePM2.1-MITRE+ATLAS+Overview+Sept+2025.pdf">MITRE ATLAS Overview - NIST Computer Security Resource Center</a></li>
+<li><a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills">GitHub - mukul975/Anthropic-Cybersecurity-Skills: 754 ...</a></li>
+<li><a href="https://atlas.mitre.org/">MITRE ATLAS™</a></li>
+<li><a href="https://www.isaca.org/resources/news-and-trends/industry-news/2024/comparing-the-mitre-attck-and-nist-cybersecurity-frameworks">Comparing the MITRE ATT&CK and NIST Cybersecurity Frameworks</a></li>
+<li><a href="https://www.vectra.ai/topics/mitre-d3fend">What is MITRE D3FEND: Framework & ATT&CK Mapping - Vectra AI</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#cybersecurity`, `#AI agents`, `#MITRE ATT&CK`, `#NIST`, `#developer tools`
+**Tags**: `#cybersecurity`, `#AI agents`, `#GitHub repo`, `#security frameworks`, `#Python`
 
 ---
 
 <a id="item-19"></a>
-## [CloakBrowser Adds Stealth Chromium for Bot Evasion](https://github.com/CloakHQ/CloakBrowser) ⭐️ 7/10
+## [GitHub Opens Copilot SDK for App Integration](https://github.com/github/copilot-sdk) ⭐️ 6/10
 
-CloakHQ's CloakBrowser is a Python-based stealth Chromium project that claims to pass bot detection tests and act as a drop-in Playwright replacement. The repo says it uses source-level fingerprint patches and reports 30/30 tests passed. If the claims hold up, this could reduce the friction of building browser automation that survives anti-bot systems, especially for scraping and testing workflows. It is also notable because it tries to replace Playwright rather than simply wrap it with a stealth layer. The project is built around Chromium source patches rather than only runtime fingerprint spoofing, and the repo description highlights patches across browser signals such as canvas, WebGL, audio, fonts, GPU, screen properties, WebRTC, network timing, and automation indicators. The available evidence is limited to the repository's own claims and a small recent star increase, so independent validation is still important.
+GitHub's copilot-sdk is a Java-based, multi-platform SDK for embedding GitHub Copilot Agent capabilities into applications and services. The repository gained 20 stars in the past 24 hours, with 2 pushes and 1 fork added. This matters because it lowers the barrier for developers who want to add agent-style AI features without building orchestration from scratch. If adopted, it could help bring Copilot-powered workflows into a wider range of products and internal tools. According to GitHub's own repository description and related documentation, the SDK is designed to let developers define custom agents, skills, and tools, and the Copilot SDK provides direct access to the underlying agent runtime, including planning, tool invocation, file edits, streaming, and multi-turn sessions. The current signal is still modest, so it is better viewed as an emerging developer platform than a proven ecosystem standard.
 
-ossinsight · CloakHQ · Jun 8, 05:19
+ossinsight · github · Jun 8, 07:19
 
-**Background**: Playwright is a browser automation framework that controls real browser engines such as Chromium, Firefox, or WebKit. In automation and scraping contexts, websites often use fingerprinting and other anti-bot checks to detect headless or scripted browsers. Stealth tools try to make automated browsers look more like normal user traffic by changing browser-visible signals.
+**Background**: An SDK, or software development kit, is a set of tools and APIs that helps developers build on top of an existing platform. In this case, the platform is GitHub Copilot's agent runtime, which handles the back-and-forth work of planning tasks, using tools, and maintaining context across turns. AI agent SDKs are increasingly used when teams want to embed autonomous or semi-autonomous assistants into apps instead of calling a model directly.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/CloakHQ/CloakBrowser">GitHub - CloakHQ/CloakBrowser: Stealth Chromium that passes ...</a></li>
-<li><a href="https://github.com/niespodd/browser-fingerprinting">GitHub - niespodd/ browser - fingerprinting : Analysis of Bot Protection...</a></li>
-<li><a href="https://blog.send.win/playwright-stealth-complete-guide-2026/">Playwright Stealth : Complete Guide (2026) - Sendwin</a></li>
+<li><a href="https://github.com/github/copilot-sdk">GitHub - github/copilot-sdk: Multi-platform SDK for ...</a></li>
+<li><a href="https://github.blog/changelog/2026-06-02-copilot-sdk-is-now-generally-available/">Copilot SDK is now generally available - GitHub Changelog</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#browser automation`, `#anti-bot detection`, `#Playwright`, `#Chromium`, `#Python`
+**Tags**: `#GitHub Copilot`, `#SDK`, `#Developer Tools`, `#Java`, `#AI Agents`
 
 ---
 
 <a id="item-20"></a>
-## [Teenage Engineering unveils APC–2 record cutter](https://teenage.engineering/products/apc-2) ⭐️ 6/10
+## [OpenSquilla Promotes Token-Efficient AI Agents](https://github.com/opensquilla/opensquilla) ⭐️ 6/10
 
-Teenage Engineering announced the APC–2, a professional record cutter for producing original playback discs. The product page positions it as a tool for making physical discs rather than a consumer turntable or standard audio player. The APC–2 adds a rare piece of analog audio hardware to the market and highlights continued interest in physical, hands-on music production. It also sparked debate about whether creative appeal and aesthetics can justify the cost and practicality of record cutting equipment. Based on the announcement and discussion, the device is aimed at original playback discs, which implies a cutting workflow rather than simple duplication. Community interest centered on economics, consistency, and use cases, with some commenters noting that single-record services already exist at much lower cost.
+OpenSquilla, a Python GitHub repository, is trending with 20 stars gained in the past 24 hours and positions itself as an "OpenSquilla — Token-Efficient AI Agent". The project’s stated goal is to deliver higher "intelligence density" within the same budget. Token-efficient agent design is becoming important because AI workflows can burn through context and budget quickly, especially in multi-step agent systems. If OpenSquilla’s approach proves useful, it could help developers build cheaper and more scalable AI agents without sacrificing too much capability. The repo is written in Python, but the provided material does not include technical documentation, benchmarks, or implementation details. At this stage, the main signal is the project’s positioning around token efficiency rather than any verified performance claim.
 
-hackernews · vthommeret · Jun 8, 01:27 · [Discussion](https://news.ycombinator.com/item?id=48440383)
+ossinsight · opensquilla · Jun 8, 07:19
 
-**Background**: Vinyl record cutting uses a lathe to engrave audio onto a disc, creating a master or playable record. This is different from pressing mass-produced vinyl, and the process is often associated with mastering equipment and specialized studios. Because it is niche and equipment-heavy, record cutting is usually done by dedicated services rather than by individual hobbyists.
+**Background**: AI agents are systems that can take actions, call tools, and chain reasoning steps to complete tasks. In practice, these systems often pay for every token they send to and receive from an LLM, so reducing token usage can lower cost and sometimes improve speed. The phrase "intelligence density" here refers to the idea of getting more useful output per unit of token budget.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://pspatialaudio.com/lathes.htm">Disc - cutting lathes</a></li>
+<li><a href="https://medium.com/@amareswer/toon-vs-json-the-most-token-efficient-format-for-ai-agents-282ad5c853f2">TOON vs JSON: The Most Token - Efficient Format for AI Agents</a></li>
+<li><a href="https://skywork.ai/skillhub/token-efficient-agent/">Token Efficient Agent - Skywork Skill Hub</a></li>
+<li><a href="https://levelup.gitconnected.com/how-and-where-ai-agents-secretly-burn-through-your-money-72bae329d4d5">How and Where AI Agents Secretly Burn Through... | Level Up Coding</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The discussion was split between skepticism and appreciation. Some users questioned the market, pricing, and whether owning a cutter makes economic sense, while others praised Teenage Engineering for building something visually striking and delightfully impractical.
-
-**Tags**: `#hardware`, `#analog audio`, `#vinyl`, `#product design`, `#teenage engineering`
+**Tags**: `#AI agents`, `#Python`, `#token efficiency`, `#LLM tooling`, `#open source`
 
 ---
