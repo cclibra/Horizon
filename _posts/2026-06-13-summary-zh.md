@@ -5,34 +5,43 @@ date: 2026-06-13
 lang: zh
 ---
 
-> 从 58 条内容中筛选出 20 条重要资讯。
+> 从 72 条内容中筛选出 20 条重要资讯。
 
 ---
 
-1. [langchain-ai/langchain released langchain-openai==1.3.1](#item-1) ⭐️ 0/10
-2. [langchain-ai/langchain released langchain==1.3.9](#item-2) ⭐️ 0/10
-3. [langchain-ai/langchain released langchain==1.3.8](#item-3) ⭐️ 0/10
-4. [langchain-ai/langchain released langchain-core==1.4.7](#item-4) ⭐️ 0/10
-5. [langchain-ai/langchain released langchain-anthropic==1.4.6](#item-5) ⭐️ 0/10
-6. [browser-use/browser-use released 0.13.2](#item-6) ⭐️ 0/10
-7. [Statement on US government directive to suspend access to Fable 5 and Mythos 5](#item-7) ⭐️ 0/10
-8. [Open source AI must win](#item-8) ⭐️ 0/10
+1. [langchain-ai/langchain released langchain-openai==1.3.2](#item-1) ⭐️ 0/10
+2. [langchain-ai/langchain released langchain-openai==1.3.1](#item-2) ⭐️ 0/10
+3. [langchain-ai/langchain released langchain==1.3.9](#item-3) ⭐️ 0/10
+4. [langchain-ai/langchain released langchain==1.3.8](#item-4) ⭐️ 0/10
+5. [langchain-ai/langchain released langchain-core==1.4.7](#item-5) ⭐️ 0/10
+6. [langchain-ai/langchain released langchain-anthropic==1.4.6](#item-6) ⭐️ 0/10
+7. [browser-use/browser-use released 0.13.2](#item-7) ⭐️ 0/10
+8. [Leaving Mozilla](#item-8) ⭐️ 0/10
 9. [Electric motors with no rare earths](#item-9) ⭐️ 0/10
-10. [CRISPR tech selectively shreds cancer cells, including "undruggable" cancers](#item-10) ⭐️ 0/10
-11. [Show HN: Putt.day a daily mini golf game](#item-11) ⭐️ 0/10
-12. [Twenty One Zero-Days in FFmpeg](#item-12) ⭐️ 0/10
-13. [Swift at Apple: Migrating the TrueType hinting interpreter](#item-13) ⭐️ 0/10
-14. [How to setup a local coding agent on macOS](#item-14) ⭐️ 0/10
-15. [Malware developers added nuclear and biological weapons text to to their spyware](#item-15) ⭐️ 0/10
-16. [Pirates, a naval warfare game inspired by Sid Meier's Pirates](#item-16) ⭐️ 0/10
-17. [/architect: Reduce Fable tokens by 80%, Fable orchestrates/reviews, Codex builds](#item-17) ⭐️ 0/10
-18. [Slightly reducing the sloppiness of AI generated front end](#item-18) ⭐️ 0/10
-19. [Palantir loses legal challenge against Swiss investigative magazine](#item-19) ⭐️ 0/10
-20. [As a result of a US Government directive, we are suspending access to Fable 5](#item-20) ⭐️ 0/10
+10. [Statement on US government directive to suspend access to Fable 5 and Mythos 5](#item-10) ⭐️ 0/10
+11. [CRISPR tech selectively shreds cancer cells, including "undruggable" cancers](#item-11) ⭐️ 0/10
+12. [There is a shadow hanging over this Fable thing](#item-12) ⭐️ 0/10
+13. [Open source AI must win](#item-13) ⭐️ 0/10
+14. [Twenty One Zero-Days in FFmpeg](#item-14) ⭐️ 0/10
+15. [Show HN: Putt.day a daily mini golf game](#item-15) ⭐️ 0/10
+16. [How to setup a local coding agent on macOS](#item-16) ⭐️ 0/10
+17. [Swift at Apple: Migrating the TrueType hinting interpreter](#item-17) ⭐️ 0/10
+18. [Pirates, a naval warfare game inspired by Sid Meier's Pirates](#item-18) ⭐️ 0/10
+19. [Slightly reducing the sloppiness of AI generated front end](#item-19) ⭐️ 0/10
+20. [Palantir loses legal challenge against Swiss investigative magazine](#item-20) ⭐️ 0/10
 
 ---
 
 <a id="item-1"></a>
+## [langchain-ai/langchain released langchain-openai==1.3.2](https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.3.2) ⭐️ 0/10
+
+langchain-ai/langchain released langchain-openai==1.3.2
+
+github · github-actions[bot] · 6月13日 05:42
+
+---
+
+<a id="item-2"></a>
 ## [langchain-ai/langchain released langchain-openai==1.3.1](https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.3.1) ⭐️ 0/10
 
 langchain-ai/langchain released langchain-openai==1.3.1
@@ -41,7 +50,7 @@ github · github-actions[bot] · 6月13日 02:42
 
 ---
 
-<a id="item-2"></a>
+<a id="item-3"></a>
 ## [langchain-ai/langchain released langchain==1.3.9](https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.3.9) ⭐️ 0/10
 
 langchain-ai/langchain released langchain==1.3.9
@@ -50,7 +59,7 @@ github · github-actions[bot] · 6月12日 16:53
 
 ---
 
-<a id="item-3"></a>
+<a id="item-4"></a>
 ## [langchain-ai/langchain released langchain==1.3.8](https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.3.8) ⭐️ 0/10
 
 langchain-ai/langchain released langchain==1.3.8
@@ -59,7 +68,7 @@ github · github-actions[bot] · 6月12日 04:20
 
 ---
 
-<a id="item-4"></a>
+<a id="item-5"></a>
 ## [langchain-ai/langchain released langchain-core==1.4.7](https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.4.7) ⭐️ 0/10
 
 langchain-ai/langchain released langchain-core==1.4.7
@@ -68,7 +77,7 @@ github · github-actions[bot] · 6月12日 19:24
 
 ---
 
-<a id="item-5"></a>
+<a id="item-6"></a>
 ## [langchain-ai/langchain released langchain-anthropic==1.4.6](https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.4.6) ⭐️ 0/10
 
 langchain-ai/langchain released langchain-anthropic==1.4.6
@@ -77,7 +86,7 @@ github · github-actions[bot] · 6月12日 16:54
 
 ---
 
-<a id="item-6"></a>
+<a id="item-7"></a>
 ## [browser-use/browser-use released 0.13.2](https://github.com/browser-use/browser-use/releases/tag/0.13.2) ⭐️ 0/10
 
 browser-use/browser-use released 0.13.2
@@ -86,21 +95,12 @@ github · MagMueller · 6月12日 22:45
 
 ---
 
-<a id="item-7"></a>
-## [Statement on US government directive to suspend access to Fable 5 and Mythos 5](https://www.anthropic.com/news/fable-mythos-access) ⭐️ 0/10
-
-Statement on US government directive to suspend access to Fable 5 and Mythos 5
-
-hackernews · Dylan1312 · 6月13日 00:51 · [社区讨论](https://news.ycombinator.com/item?id=48511072)
-
----
-
 <a id="item-8"></a>
-## [Open source AI must win](https://opensourceaimustwin.com/?share=v2) ⭐️ 0/10
+## [Leaving Mozilla](https://blog.unitedheroes.net/5751) ⭐️ 0/10
 
-Open source AI must win
+Leaving Mozilla
 
-hackernews · vednig · 6月13日 02:14 · [社区讨论](https://news.ycombinator.com/item?id=48511908)
+hackernews · martey · 6月13日 05:57 · [社区讨论](https://news.ycombinator.com/item?id=48513806)
 
 ---
 
@@ -114,6 +114,15 @@ hackernews · bestouff · 6月12日 22:08 · [社区讨论](https://news.ycombin
 ---
 
 <a id="item-10"></a>
+## [Statement on US government directive to suspend access to Fable 5 and Mythos 5](https://www.anthropic.com/news/fable-mythos-access) ⭐️ 0/10
+
+Statement on US government directive to suspend access to Fable 5 and Mythos 5
+
+hackernews · Dylan1312 · 6月13日 00:51 · [社区讨论](https://news.ycombinator.com/item?id=48511072)
+
+---
+
+<a id="item-11"></a>
 ## [CRISPR tech selectively shreds cancer cells, including "undruggable" cancers](https://innovativegenomics.org/news/crispr-technique-selectively-shreds-cancer-cells/) ⭐️ 0/10
 
 CRISPR tech selectively shreds cancer cells, including "undruggable" cancers
@@ -122,16 +131,25 @@ hackernews · gmays · 6月12日 15:15 · [社区讨论](https://news.ycombinato
 
 ---
 
-<a id="item-11"></a>
-## [Show HN: Putt.day a daily mini golf game](https://putt.day/) ⭐️ 0/10
+<a id="item-12"></a>
+## [There is a shadow hanging over this Fable thing](https://12gramsofcarbon.com/p/tech-things-there-is-a-massive-shadow) ⭐️ 0/10
 
-Show HN: Putt.day a daily mini golf game
+There is a shadow hanging over this Fable thing
 
-hackernews · ellg · 6月12日 22:56 · [社区讨论](https://news.ycombinator.com/item?id=48510341)
+hackernews · theahura · 6月13日 05:16 · [社区讨论](https://news.ycombinator.com/item?id=48513536)
 
 ---
 
-<a id="item-12"></a>
+<a id="item-13"></a>
+## [Open source AI must win](https://opensourceaimustwin.com/?share=v2) ⭐️ 0/10
+
+Open source AI must win
+
+hackernews · vednig · 6月13日 02:14 · [社区讨论](https://news.ycombinator.com/item?id=48511908)
+
+---
+
+<a id="item-14"></a>
 ## [Twenty One Zero-Days in FFmpeg](https://depthfirst.com/research/21-zero-days-in-ffmpeg) ⭐️ 0/10
 
 Twenty One Zero-Days in FFmpeg
@@ -140,16 +158,16 @@ hackernews · redbell · 6月12日 22:13 · [社区讨论](https://news.ycombina
 
 ---
 
-<a id="item-13"></a>
-## [Swift at Apple: Migrating the TrueType hinting interpreter](https://www.swift.org/blog/migrating-truetype-hinting-to-swift/) ⭐️ 0/10
+<a id="item-15"></a>
+## [Show HN: Putt.day a daily mini golf game](https://putt.day/) ⭐️ 0/10
 
-Swift at Apple: Migrating the TrueType hinting interpreter
+Show HN: Putt.day a daily mini golf game
 
-hackernews · DASD · 6月12日 19:54 · [社区讨论](https://news.ycombinator.com/item?id=48508726)
+hackernews · ellg · 6月12日 22:56 · [社区讨论](https://news.ycombinator.com/item?id=48510341)
 
 ---
 
-<a id="item-14"></a>
+<a id="item-16"></a>
 ## [How to setup a local coding agent on macOS](https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos) ⭐️ 0/10
 
 How to setup a local coding agent on macOS
@@ -158,16 +176,16 @@ hackernews · kkm · 6月12日 17:34 · [社区讨论](https://news.ycombinator.
 
 ---
 
-<a id="item-15"></a>
-## [Malware developers added nuclear and biological weapons text to to their spyware](https://twitter.com/jsrailton/status/2064661778978533571) ⭐️ 0/10
+<a id="item-17"></a>
+## [Swift at Apple: Migrating the TrueType hinting interpreter](https://www.swift.org/blog/migrating-truetype-hinting-to-swift/) ⭐️ 0/10
 
-Malware developers added nuclear and biological weapons text to to their spyware
+Swift at Apple: Migrating the TrueType hinting interpreter
 
-hackernews · marc__1 · 6月11日 20:24 · [社区讨论](https://news.ycombinator.com/item?id=48495928)
+hackernews · DASD · 6月12日 19:54 · [社区讨论](https://news.ycombinator.com/item?id=48508726)
 
 ---
 
-<a id="item-16"></a>
+<a id="item-18"></a>
 ## [Pirates, a naval warfare game inspired by Sid Meier's Pirates](https://piwodlaiwo.github.io/pirates/) ⭐️ 0/10
 
 Pirates, a naval warfare game inspired by Sid Meier's Pirates
@@ -176,16 +194,7 @@ hackernews · iweczek · 6月12日 17:07 · [社区讨论](https://news.ycombina
 
 ---
 
-<a id="item-17"></a>
-## [/architect: Reduce Fable tokens by 80%, Fable orchestrates/reviews, Codex builds](https://github.com/DanMcInerney/architect-loop) ⭐️ 0/10
-
-/architect: Reduce Fable tokens by 80%, Fable orchestrates/reviews, Codex builds
-
-hackernews · DanMcInerney · 6月12日 20:33 · [社区讨论](https://news.ycombinator.com/item?id=48509133)
-
----
-
-<a id="item-18"></a>
+<a id="item-19"></a>
 ## [Slightly reducing the sloppiness of AI generated front end](https://envs.net/~volpe/blog/posts/reduce-slop.html) ⭐️ 0/10
 
 Slightly reducing the sloppiness of AI generated front end
@@ -194,20 +203,11 @@ hackernews · FergusArgyll · 6月12日 14:48 · [社区讨论](https://news.yco
 
 ---
 
-<a id="item-19"></a>
+<a id="item-20"></a>
 ## [Palantir loses legal challenge against Swiss investigative magazine](https://www.ft.com/content/7ffcace7-9dc0-4e7e-9912-895ac073f979) ⭐️ 0/10
 
 Palantir loses legal challenge against Swiss investigative magazine
 
 hackernews · sschueller · 6月12日 20:39 · [社区讨论](https://news.ycombinator.com/item?id=48509182)
-
----
-
-<a id="item-20"></a>
-## [As a result of a US Government directive, we are suspending access to Fable 5](https://twitter.com/ClaudeDevs/status/2065597942602531163) ⭐️ 0/10
-
-As a result of a US Government directive, we are suspending access to Fable 5
-
-hackernews · plonkus · 6月13日 01:02 · [社区讨论](https://news.ycombinator.com/item?id=48511168)
 
 ---
