@@ -1,0 +1,213 @@
+---
+layout: default
+title: "Horizon Summary: 2026-09-24 (EN)"
+date: 2026-09-24
+lang: en
+---
+
+> From 77 items, 20 important content pieces were selected
+
+---
+
+1. [openai/openai-python released v3.19.2](#item-1) ⭐️ 0/10
+2. [openai/openai-python released v3.19.1](#item-2) ⭐️ 0/10
+3. [openai/openai-python released v3.19.0](#item-3) ⭐️ 0/10
+4. [openai/openai-python released v3.18.0](#item-4) ⭐️ 0/10
+5. [langchain-ai/langchain released langchain-openai==1.6.5](#item-5) ⭐️ 0/10
+6. [langchain-ai/langchain released langchain-anthropic==1.7.4](#item-6) ⭐️ 0/10
+7. [langchain-ai/langchain released langchain-openai==1.6.4](#item-7) ⭐️ 0/10
+8. [langchain-ai/langchain released langchain-anthropic==1.7.3](#item-8) ⭐️ 0/10
+9. [Linux support is coming to Snapdragon X2 Series](#item-9) ⭐️ 0/10
+10. [Claude discovers a novel enzyme system with CRISPR-like repeats](#item-10) ⭐️ 0/10
+11. [Feds Target AI Critics as "Foreign Agents"](#item-11) ⭐️ 0/10
+12. [ArXiv receives multiyear commitments to support it as an independent nonprofit](#item-12) ⭐️ 0/10
+13. [VSCode's SSH Agent Is Bananas (2025)](#item-13) ⭐️ 0/10
+14. [Meta VR Glasses](#item-14) ⭐️ 0/10
+15. [Fixing the Portobello Police Station Clock](#item-15) ⭐️ 0/10
+16. [Mercury 2.5 LLM hits 770 tokens per second](#item-16) ⭐️ 0/10
+17. [Making Tailscale Faster](#item-17) ⭐️ 0/10
+18. [Italian parliament votes for return to nuclear energy](#item-18) ⭐️ 0/10
+19. [Australia says OpenAI agent hacked into government website](#item-19) ⭐️ 0/10
+20. [A brief history of Windows scroll bar shortcuts](#item-20) ⭐️ 0/10
+
+---
+
+<a id="item-1"></a>
+## [openai/openai-python released v3.19.2](https://github.com/openai/openai-python/releases/tag/v3.19.2) ⭐️ 0/10
+
+openai/openai-python released v3.19.2
+
+github · openai-sdks[bot] · Sep 24, 00:05
+
+---
+
+<a id="item-2"></a>
+## [openai/openai-python released v3.19.1](https://github.com/openai/openai-python/releases/tag/v3.19.1) ⭐️ 0/10
+
+openai/openai-python released v3.19.1
+
+github · openai-sdks[bot] · Sep 23, 19:15
+
+---
+
+<a id="item-3"></a>
+## [openai/openai-python released v3.19.0](https://github.com/openai/openai-python/releases/tag/v3.19.0) ⭐️ 0/10
+
+openai/openai-python released v3.19.0
+
+github · openai-sdks[bot] · Sep 23, 00:08
+
+---
+
+<a id="item-4"></a>
+## [openai/openai-python released v3.18.0](https://github.com/openai/openai-python/releases/tag/v3.18.0) ⭐️ 0/10
+
+openai/openai-python released v3.18.0
+
+github · openai-sdks[bot] · Sep 22, 18:25
+
+---
+
+<a id="item-5"></a>
+## [langchain-ai/langchain released langchain-openai==1.6.5](https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.5) ⭐️ 0/10
+
+langchain-ai/langchain released langchain-openai==1.6.5
+
+github · github-actions[bot] · Sep 23, 15:31
+
+---
+
+<a id="item-6"></a>
+## [langchain-ai/langchain released langchain-anthropic==1.7.4](https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.4) ⭐️ 0/10
+
+langchain-ai/langchain released langchain-anthropic==1.7.4
+
+github · github-actions[bot] · Sep 23, 17:56
+
+---
+
+<a id="item-7"></a>
+## [langchain-ai/langchain released langchain-openai==1.6.4](https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.4) ⭐️ 0/10
+
+langchain-ai/langchain released langchain-openai==1.6.4
+
+github · github-actions[bot] · Sep 22, 22:37
+
+---
+
+<a id="item-8"></a>
+## [langchain-ai/langchain released langchain-anthropic==1.7.3](https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.3) ⭐️ 0/10
+
+langchain-ai/langchain released langchain-anthropic==1.7.3
+
+github · github-actions[bot] · Sep 22, 22:08
+
+---
+
+<a id="item-9"></a>
+## [Linux support is coming to Snapdragon X2 Series](https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux) ⭐️ 0/10
+
+Linux support is coming to Snapdragon X2 Series
+
+hackernews · aaronday · Sep 23, 22:38 · [Discussion](https://news.ycombinator.com/item?id=49823582)
+
+---
+
+<a id="item-10"></a>
+## [Claude discovers a novel enzyme system with CRISPR-like repeats](https://www.anthropic.com/news/claude-discovers-novel-enzyme-system) ⭐️ 0/10
+
+Claude discovers a novel enzyme system with CRISPR-like repeats
+
+hackernews · raahelb · Sep 23, 18:06 · [Discussion](https://news.ycombinator.com/item?id=49820134)
+
+---
+
+<a id="item-11"></a>
+## [Feds Target AI Critics as "Foreign Agents"](https://www.kenklippenstein.com/p/feds-think-ai-critics-are-foreign) ⭐️ 0/10
+
+Feds Target AI Critics as "Foreign Agents"
+
+hackernews · nmeagent · Sep 24, 00:41 · [Discussion](https://news.ycombinator.com/item?id=49824686)
+
+---
+
+<a id="item-12"></a>
+## [ArXiv receives multiyear commitments to support it as an independent nonprofit](https://blog.arxiv.org/2026/09/23/arxiv-receives-multiyear-investment/) ⭐️ 0/10
+
+ArXiv receives multiyear commitments to support it as an independent nonprofit
+
+hackernews · JohnHammersley · Sep 23, 22:45 · [Discussion](https://news.ycombinator.com/item?id=49823664)
+
+---
+
+<a id="item-13"></a>
+## [VSCode's SSH Agent Is Bananas (2025)](https://fly.io/blog/vscode-ssh-wtf/) ⭐️ 0/10
+
+VSCode's SSH Agent Is Bananas (2025)
+
+hackernews · Rapzid · Sep 23, 21:01 · [Discussion](https://news.ycombinator.com/item?id=49822555)
+
+---
+
+<a id="item-14"></a>
+## [Meta VR Glasses](https://www.meta.com/vr-glasses/) ⭐️ 0/10
+
+Meta VR Glasses
+
+hackernews · polymorph1sm · Sep 23, 23:47 · [Discussion](https://news.ycombinator.com/item?id=49824268)
+
+---
+
+<a id="item-15"></a>
+## [Fixing the Portobello Police Station Clock](https://pointinthecloud.com/2026-04-11-211700.html) ⭐️ 0/10
+
+Fixing the Portobello Police Station Clock
+
+hackernews · avidly · Sep 23, 15:18 · [Discussion](https://news.ycombinator.com/item?id=49817469)
+
+---
+
+<a id="item-16"></a>
+## [Mercury 2.5 LLM hits 770 tokens per second](https://artificialanalysis.ai/models/mercury-2-5) ⭐️ 0/10
+
+Mercury 2.5 LLM hits 770 tokens per second
+
+hackernews · Retro_Dev · Sep 23, 22:16 · [Discussion](https://news.ycombinator.com/item?id=49823348)
+
+---
+
+<a id="item-17"></a>
+## [Making Tailscale Faster](https://tailscale.com/blog/making-tailscale-faster) ⭐️ 0/10
+
+Making Tailscale Faster
+
+hackernews · yarapavan · Sep 23, 17:49 · [Discussion](https://news.ycombinator.com/item?id=49819880)
+
+---
+
+<a id="item-18"></a>
+## [Italian parliament votes for return to nuclear energy](https://apnews.com/article/italy-nuclear-chernobyl-4891b6b7c7791ae84db6b0bf0f7cf567) ⭐️ 0/10
+
+Italian parliament votes for return to nuclear energy
+
+hackernews · geox · Sep 23, 17:06 · [Discussion](https://news.ycombinator.com/item?id=49819221)
+
+---
+
+<a id="item-19"></a>
+## [Australia says OpenAI agent hacked into government website](https://www.channelnewsasia.com/world/australia-openai-agent-breach-government-portal-6406411) ⭐️ 0/10
+
+Australia says OpenAI agent hacked into government website
+
+hackernews · doppp · Sep 24, 01:24 · [Discussion](https://news.ycombinator.com/item?id=49825024)
+
+---
+
+<a id="item-20"></a>
+## [A brief history of Windows scroll bar shortcuts](https://devblogs.microsoft.com/oldnewthing/20260922-00/?p=112719/) ⭐️ 0/10
+
+A brief history of Windows scroll bar shortcuts
+
+hackernews · tybulewicz · Sep 23, 18:02 · [Discussion](https://news.ycombinator.com/item?id=49820065)
+
+---
